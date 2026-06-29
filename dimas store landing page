@@ -1,0 +1,1212 @@
+<!--DIMAS STORE — MODERN REDESIGN 2026-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" />
+<style>
+
+:root {
+  --ink: #0a0a0a;
+  --ink-soft: #1a1a1a;
+  --cream: #f5f0e8;
+  --cream-dark: #ede8df;
+  --white: #ffffff;
+  --sage: #8aad7f;
+  --sage-dark: #4a7040;
+  --sage-pale: #eaf2e7;
+  --orange: #ee4d2d;
+  --wa: #25D366;
+  --muted: #6b6b6b;
+  --line: #e8e3dc;
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --r-sm: 14px;
+  --r-md: 20px;
+  --r-lg: 28px;
+  --r-xl: 40px;
+}
+
+html { scroll-behavior: smooth; }
+
+#ds-app, #ds-app * { box-sizing: border-box; margin: 0; padding: 0; }
+
+#ds-app {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#ds-app a { color: inherit; text-decoration: none; }
+#ds-app img { max-width: 100%; display: block; }
+#ds-app button { cursor: pointer; font-family: var(--font-body); }
+
+.ds-wrap { width: min(1200px, calc(100% - 40px)); margin: 0 auto; }
+
+/* ── HEADER ── */
+.ds-header {
+  position: sticky; top: 0; z-index: 80;
+  background: rgba(245,240,232,.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--line);
+}
+.ds-header-in {
+  height: 64px; display: flex; align-items: center;
+  justify-content: space-between; gap: 16px;
+}
+.ds-logo {
+  font-family: var(--font-display);
+  font-size: 20px; font-weight: 800;
+  letter-spacing: -.05em;
+}
+.ds-logo em { color: var(--sage-dark); font-style: normal; }
+.ds-nav {
+  display: none; gap: 28px;
+  font-size: 13px; font-weight: 600;
+  color: var(--muted); letter-spacing: .01em;
+}
+.ds-nav a:hover { color: var(--ink); }
+.ds-header-btns { display: flex; gap: 8px; align-items: center; }
+.ds-icon-btn {
+  width: 38px; height: 38px; border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 14px;
+  transition: all .2s;
+}
+.ds-icon-btn:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ── BUTTONS ── */
+.ds-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 0 22px; min-height: 48px;
+  border-radius: 999px; border: 0; font-size: 13px;
+  font-weight: 700; font-family: var(--font-body);
+  letter-spacing: .02em; transition: all .22s ease;
+  white-space: nowrap;
+}
+.ds-btn-black { background: var(--ink); color: #fff; }
+.ds-btn-black:hover { background: var(--ink-soft); transform: translateY(-1px); }
+.ds-btn-outline { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+.ds-btn-outline:hover { background: var(--ink); color: #fff; }
+.ds-btn-shopee { background: var(--orange); color: #fff; box-shadow: 0 8px 24px rgba(238,77,45,.3); }
+.ds-btn-shopee:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(238,77,45,.38); }
+.ds-btn-wa { background: var(--wa); color: #fff; box-shadow: 0 8px 24px rgba(37,211,102,.28); }
+.ds-btn-wa:hover { transform: translateY(-2px); }
+.ds-btn-sage { background: var(--sage-pale); color: var(--sage-dark); border: 1.5px solid #c5dcc1; }
+.ds-btn-sage:hover { background: var(--sage); color: #fff; border-color: var(--sage); }
+.ds-btn-sm { min-height: 38px; padding: 0 16px; font-size: 12px; }
+
+/* ── HERO ── */
+.ds-hero {
+  padding: 60px 0 0;
+  background: var(--cream);
+}
+.ds-hero-inner {
+  display: grid; grid-template-columns: 1fr;
+  gap: 40px; align-items: end;
+}
+.ds-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 14px; border-radius: 999px;
+  border: 1.5px solid #c5dcc1;
+  background: var(--sage-pale);
+  color: var(--sage-dark);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.ds-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 11vw, 96px);
+  font-weight: 800; line-height: .92;
+  letter-spacing: -.05em;
+}
+.ds-hero h1 .accent { color: var(--sage-dark); }
+.ds-hero h1 .outline {
+  -webkit-text-stroke: 2px var(--ink);
+  color: transparent;
+}
+.ds-hero-desc {
+  margin-top: 24px; max-width: 500px;
+  color: var(--muted); font-size: 15px; line-height: 1.8;
+}
+.ds-hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.ds-hero-stats {
+  display: flex; gap: 28px; flex-wrap: wrap;
+  margin-top: 40px; padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.ds-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 26px; font-weight: 800;
+  letter-spacing: -.04em;
+}
+.ds-stat span { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: .03em; text-transform: uppercase; }
+
+.ds-hero-img-wrap {
+  position: relative;
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+  overflow: hidden;
+  min-height: 360px;
+  background: #1a1a1a;
+}
+.ds-hero-img-wrap img {
+  width: 100%; height: 100%;
+  min-height: 360px; object-fit: cover;
+  filter: brightness(.85) saturate(.9);
+}
+.ds-hero-tag {
+  position: absolute; top: 20px; left: 20px;
+  background: rgba(255,255,255,.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  color: #fff; padding: 8px 16px;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: .03em;
+}
+.ds-hero-float {
+  position: absolute; bottom: 20px; left: 20px; right: 20px;
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: var(--r-md);
+  padding: 16px;
+  display: flex; align-items: center; gap: 14px;
+}
+.ds-hero-float-icon {
+  width: 46px; height: 46px; border-radius: 14px;
+  background: var(--orange); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex: 0 0 auto;
+}
+.ds-hero-float h3 { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+.ds-hero-float p { color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.4; }
+
+/* ── MARQUEE ── */
+.ds-marquee-wrap {
+  background: var(--ink); padding: 16px 0;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.ds-marquee {
+  display: flex; gap: 0; white-space: nowrap;
+  animation: marquee 24s linear infinite;
+}
+.ds-marquee-track {
+  display: flex; gap: 40px; padding-right: 40px;
+  font-family: var(--font-display);
+  font-size: 13px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: rgba(255,255,255,.55);
+}
+.ds-marquee-track .dot { color: var(--sage); }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ── CATEGORY STRIP ── */
+.ds-cat-section { padding: 64px 0; background: var(--cream); }
+.ds-section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 16px;
+}
+.ds-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 800; letter-spacing: -.04em;
+  line-height: 1.05;
+}
+.ds-cat-scroll {
+  display: flex; gap: 12px; overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 24px 0 8px; scrollbar-width: none;
+}
+.ds-cat-scroll::-webkit-scrollbar { display: none; }
+.ds-cat-item {
+  flex: 0 0 auto; scroll-snap-align: start;
+  width: 140px; text-align: center; cursor: pointer;
+}
+.ds-cat-img {
+  width: 140px; height: 160px; border-radius: var(--r-md);
+  overflow: hidden; background: #ddd; position: relative;
+  border: 2px solid transparent;
+  transition: all .25s;
+}
+.ds-cat-item:hover .ds-cat-img { border-color: var(--ink); transform: translateY(-3px); }
+.ds-cat-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.ds-cat-item:hover .ds-cat-img img { transform: scale(1.06); }
+.ds-cat-name {
+  margin-top: 10px; font-size: 12px; font-weight: 700;
+  color: var(--ink); letter-spacing: .01em;
+}
+
+/* ── WHY US ── */
+.ds-why-section {
+  padding: 64px 0;
+  background: var(--ink);
+}
+.ds-why-section .ds-section-label { color: rgba(255,255,255,.4); }
+.ds-why-section .ds-section-title { color: #fff; }
+.ds-why-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 1px; background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--r-lg); overflow: hidden;
+  margin-top: 40px;
+}
+.ds-why-card {
+  background: var(--ink-soft);
+  padding: 28px 22px;
+  transition: background .2s;
+}
+.ds-why-card:hover { background: #222; }
+.ds-why-icon {
+  width: 44px; height: 44px; border-radius: 14px;
+  background: rgba(138,173,127,.15);
+  border: 1px solid rgba(138,173,127,.25);
+  color: var(--sage); font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.ds-why-card h3 {
+  color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 8px;
+}
+.ds-why-card p { color: rgba(255,255,255,.45); font-size: 13px; line-height: 1.65; }
+
+/* ── BEST SELLER ── */
+.ds-best-section { padding: 64px 0; background: var(--cream); }
+.ds-best-scroll {
+  display: flex; gap: 16px; overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 24px 0 8px; scrollbar-width: none;
+}
+.ds-best-scroll::-webkit-scrollbar { display: none; }
+
+/* ── PRODUCT GRID ── */
+.ds-products-section {
+  padding: 64px 0;
+  background: var(--white);
+}
+.ds-toolbar {
+  display: flex; flex-direction: column; gap: 12px;
+  margin: 24px 0 20px;
+}
+.ds-search-wrap { position: relative; }
+.ds-search-wrap i {
+  position: absolute; left: 16px; top: 50%;
+  transform: translateY(-50%); color: var(--muted); font-size: 13px;
+}
+.ds-search {
+  width: 100%; min-height: 48px;
+  padding: 0 16px 0 44px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: var(--cream);
+  font-family: var(--font-body);
+  font-size: 14px; font-weight: 500;
+  outline: none; transition: border-color .2s;
+}
+.ds-search:focus { border-color: var(--ink); background: #fff; }
+.ds-pills { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+.ds-pills::-webkit-scrollbar { display: none; }
+.ds-pill {
+  min-height: 38px; padding: 0 18px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: #fff;
+  font-size: 12px; font-weight: 700; color: var(--muted);
+  white-space: nowrap; transition: all .18s;
+}
+.ds-pill:hover { border-color: var(--ink); color: var(--ink); }
+.ds-pill.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* ── PRODUCT CARD ── */
+.ds-product-card {
+  background: var(--cream);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  transition: transform .22s, box-shadow .22s;
+  display: flex; flex-direction: column;
+}
+.ds-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(10,10,10,.1);
+}
+.ds-product-card.slide-card {
+  flex: 0 0 72%;
+  scroll-snap-align: start;
+}
+.ds-prod-media {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden; background: #ddd;
+}
+.ds-prod-media img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .3s;
+}
+.ds-product-card:hover .ds-prod-media img { transform: scale(1.05); }
+.ds-prod-badge {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  padding: 5px 10px; border-radius: 999px;
+  background: var(--orange); color: #fff;
+  font-size: 10px; font-weight: 800; letter-spacing: .04em;
+}
+.ds-prod-fav {
+  position: absolute; top: 12px; right: 12px; z-index: 2;
+  width: 34px; height: 34px; border-radius: 999px;
+  background: rgba(255,255,255,.9); border: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; color: var(--muted);
+  transition: all .2s;
+}
+.ds-prod-body { padding: 14px; flex: 1; display: flex; flex-direction: column; }
+.ds-prod-kat {
+  font-size: 10px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--sage-dark); margin-bottom: 5px;
+}
+.ds-prod-name {
+  font-family: var(--font-display);
+  font-size: 14px; font-weight: 700;
+  line-height: 1.25; letter-spacing: -.02em;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  min-height: 35px; margin-bottom: 8px;
+}
+.ds-prod-meta {
+  font-size: 11px; color: var(--muted); line-height: 1.7; margin-bottom: 10px;
+}
+.ds-prod-price {
+  margin-top: auto;
+  display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap;
+}
+.ds-price { font-family: var(--font-display); font-size: 16px; font-weight: 800; color: var(--ink); }
+.ds-price-old { font-size: 11px; color: #bbb; text-decoration: line-through; font-weight: 600; }
+.ds-prod-actions {
+  display: grid; grid-template-columns: 38px 1fr; gap: 8px;
+  margin-top: 12px;
+}
+.ds-detail-btn {
+  width: 38px; height: 38px; border-radius: 12px;
+  border: 1.5px solid var(--line); background: #fff;
+  color: var(--muted); font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .18s;
+}
+.ds-detail-btn:hover { border-color: var(--ink); color: var(--ink); }
+.ds-buy-btn {
+  min-height: 38px; border-radius: 12px; border: 0;
+  background: var(--ink); color: #fff;
+  font-size: 12px; font-weight: 700; font-family: var(--font-body);
+  letter-spacing: .02em; transition: background .18s;
+}
+.ds-buy-btn:hover { background: var(--ink-soft); }
+
+.ds-empty-state {
+  grid-column: 1 / -1;
+  padding: 48px 24px; text-align: center;
+  border: 1.5px dashed var(--line);
+  border-radius: var(--r-lg);
+  color: var(--muted); font-size: 14px;
+}
+
+.ds-load-wrap { display: flex; justify-content: center; margin-top: 32px; }
+
+/* ── HOW TO ORDER ── */
+.ds-order-section {
+  padding: 64px 0;
+  background: var(--cream);
+}
+.ds-order-grid { display: grid; gap: 16px; margin-top: 36px; }
+.ds-step {
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 24px;
+  border: 1px solid var(--line);
+  display: flex; align-items: flex-start; gap: 18px;
+}
+.ds-step-num {
+  font-family: var(--font-display);
+  font-size: 48px; font-weight: 800; letter-spacing: -.05em;
+  color: var(--line); line-height: 1; flex: 0 0 auto;
+  width: 50px;
+}
+.ds-step h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.ds-step p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+
+/* ── LOCATION ── */
+.ds-location-section { padding: 64px 0; background: var(--white); }
+.ds-loc-grid { display: grid; gap: 14px; margin-top: 32px; }
+.ds-loc-item {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 20px; display: flex; gap: 16px; align-items: flex-start;
+}
+.ds-loc-icon {
+  width: 46px; height: 46px; border-radius: 14px;
+  background: var(--sage-pale); color: var(--sage-dark);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex: 0 0 auto;
+}
+.ds-loc-item h3 { font-size: 14px; font-weight: 700; margin-bottom: 5px; }
+.ds-loc-item p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+
+/* ── TESTIMONIALS ── */
+.ds-testi-section { padding: 64px 0; background: var(--cream); }
+.ds-testi-grid { display: grid; gap: 14px; margin-top: 32px; }
+.ds-testi-card {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 22px;
+}
+.ds-stars { color: #f59e0b; font-size: 12px; margin-bottom: 10px; }
+.ds-testi-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.ds-testi-card p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+/* ── FOOTER ── */
+.ds-footer {
+  background: var(--ink);
+  border-radius: 40px 40px 0 0;
+  padding: 56px 0 100px;
+  margin-top: 0;
+}
+.ds-footer-grid { display: grid; gap: 40px; }
+.ds-footer-logo {
+  font-family: var(--font-display);
+  font-size: 36px; font-weight: 800; letter-spacing: -.06em;
+  color: #fff; margin-bottom: 16px;
+}
+.ds-footer-logo em { color: var(--sage); font-style: normal; }
+.ds-footer p { color: rgba(255,255,255,.45); font-size: 14px; line-height: 1.8; }
+.ds-footer-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.ds-footer-links { display: grid; gap: 10px; margin-top: 12px; }
+.ds-footer-links h4 { color: rgba(255,255,255,.3); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; }
+.ds-footer-links a { color: rgba(255,255,255,.6); font-size: 14px; font-weight: 500; transition: color .18s; }
+.ds-footer-links a:hover { color: #fff; }
+.ds-socials { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; }
+.ds-social-btn {
+  width: 42px; height: 42px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: transparent; color: rgba(255,255,255,.55);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; transition: all .2s;
+}
+.ds-social-btn:hover { background: #fff; color: var(--ink); border-color: #fff; }
+.ds-copy { margin-top: 20px !important; font-size: 11px !important; color: rgba(255,255,255,.2) !important; }
+
+/* ── STICKY MOBILE BAR ── */
+.ds-sticky {
+  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 100;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 8px; padding: 8px;
+  background: rgba(10,10,10,.9);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.ds-sticky a {
+  min-height: 46px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; font-size: 13px; font-weight: 700; color: #fff !important;
+  transition: opacity .2s;
+}
+.ds-sticky a:hover { opacity: .85; }
+.ds-sticky .sp { background: var(--orange); }
+.ds-sticky .wa { background: var(--wa); }
+
+/* ── LOADING ── */
+.ds-loading {
+  position: fixed; inset: 0; z-index: 999;
+  background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 14px;
+  font-family: var(--font-display);
+}
+.ds-spinner {
+  width: 40px; height: 40px;
+  border: 2.5px solid var(--line);
+  border-top-color: var(--sage);
+  border-radius: 999px;
+  animation: spin .8s linear infinite;
+}
+.ds-loading p {
+  font-size: 13px; font-weight: 600; color: var(--muted);
+  letter-spacing: .03em;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── MODAL ── */
+.ds-modal {
+  position: fixed; inset: 0; z-index: 200;
+  display: none; align-items: flex-end; justify-content: center;
+  padding: 0;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(4px);
+}
+.ds-modal.show { display: flex; }
+.ds-modal-card {
+  width: 100%; max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -20px 80px rgba(0,0,0,.2);
+  animation: slideUp .3s ease;
+}
+@keyframes slideUp { from { transform: translateY(60px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.ds-modal-img {
+  aspect-ratio: 16/9;
+  background: #eee; overflow: hidden;
+}
+.ds-modal-img img { width: 100%; height: 100%; object-fit: cover; }
+.ds-modal-body { padding: 24px; }
+.ds-modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.ds-modal-close {
+  width: 38px; height: 38px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: #fff;
+  font-size: 14px; color: var(--muted);
+  display: flex; align-items: center; justify-content: center;
+  flex: 0 0 auto; cursor: pointer;
+  transition: all .18s;
+}
+.ds-modal-close:hover { border-color: var(--ink); color: var(--ink); }
+.ds-modal-kat { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; color: var(--sage-dark); margin-bottom: 4px; }
+.ds-modal-title { font-family: var(--font-display); font-size: 22px; font-weight: 800; letter-spacing: -.04em; }
+.ds-modal-desc { font-size: 14px; color: var(--muted); line-height: 1.7; margin-top: 12px; }
+.ds-modal-specs {
+  background: var(--cream); border-radius: 16px;
+  padding: 0; margin: 16px 0; overflow: hidden;
+}
+.ds-spec-row {
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: 12px 16px; border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+.ds-spec-row:last-child { border-bottom: 0; }
+.ds-spec-row span:first-child { color: var(--muted); font-weight: 600; }
+.ds-spec-row span:last-child { font-weight: 700; text-align: right; }
+.ds-modal-ctas { display: flex; flex-direction: column; gap: 10px; }
+
+/* ── RESPONSIVE ── */
+@media (min-width: 640px) {
+  .ds-hero-inner { grid-template-columns: 1fr 1fr; }
+  .ds-hero h1 { font-size: clamp(56px, 8vw, 96px); }
+  .ds-hero-img-wrap { min-height: 500px; }
+  .ds-hero-img-wrap img { min-height: 500px; }
+  .ds-grid { grid-template-columns: repeat(3, 1fr); }
+  .ds-product-card.slide-card { flex-basis: 280px; }
+  .ds-testi-grid { grid-template-columns: repeat(3, 1fr); }
+  .ds-loc-grid { grid-template-columns: repeat(3, 1fr); }
+  .ds-modal-card { border-radius: 32px; max-width: 540px; max-height: 85vh; margin-bottom: 24px; }
+  .ds-modal-img { aspect-ratio: 4/3; }
+  .ds-modal-ctas { flex-direction: row; }
+  .ds-why-grid { grid-template-columns: repeat(4, 1fr); }
+  .ds-order-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .ds-nav { display: flex; }
+  .ds-hero { padding: 80px 0 0; }
+  .ds-hero-inner { grid-template-columns: .9fr 1.1fr; gap: 60px; }
+  .ds-hero-img-wrap { min-height: 620px; border-radius: var(--r-xl); }
+  .ds-hero-img-wrap img { min-height: 620px; }
+  .ds-grid { grid-template-columns: repeat(4, 1fr); }
+  .ds-sticky { display: none; }
+  .ds-footer { padding: 72px 0 40px; }
+  .ds-footer-grid { grid-template-columns: 1.2fr .8fr; align-items: start; }
+  .ds-modal { align-items: center; }
+}
+</style>
+
+<script>
+window.DIMAS_STORE_CONFIG = {
+  APPS_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycby0oz0Cy24YgarBuy4SQh-VmjYUwK-aGiWvkTETQdfHNohUBKonEVByC8JHuER3Acwz/exec'
+};
+</script>
+
+<div id="ds-app">
+  <div class="ds-loading" id="dsLoading">
+    <div class="ds-spinner"></div>
+    <p>Memuat Dimas Store…</p>
+  </div>
+
+  <!-- HEADER -->
+  <header class="ds-header">
+    <div class="ds-wrap ds-header-in">
+      <a class="ds-logo" data-store-logo="" href="#home">DIMAS<em>STORE</em></a>
+      <nav class="ds-nav" style="display:none;gap:28px;align-items:center;">
+        <a href="#kategori">Kategori</a>
+        <a href="#produk">Produk</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#lokasi">Lokasi</a>
+      </nav>
+      <div class="ds-header-btns">
+        <a class="ds-icon-btn" data-store-link="instagram" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="ds-btn ds-btn-black ds-btn-sm" data-store-link="shopee_toko" href="#"><i class="fa-solid fa-bag-shopping"></i> Shopee</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="ds-hero">
+      <div class="ds-wrap ds-hero-inner">
+        <div class="ds-hero-copy">
+          <div class="ds-eyebrow"><i class="fa-solid fa-sparkles"></i> Koleksi Terbaru 2026</div>
+          <h1>
+            <span class="accent" data-store-title="">Daily<br>Fashion</span><br>
+            <span class="outline">Kekinian</span>
+          </h1>
+          <p class="ds-hero-desc" data-store-description="">Temukan berbagai pilihan pakaian untuk kebutuhan harian, acara santai, ibadah, kerja, kuliah, hingga momen spesial.</p>
+          <div class="ds-hero-ctas">
+            <a class="ds-btn ds-btn-shopee" data-store-link="shopee_toko" href="#"><i class="fa-solid fa-bag-shopping"></i> Belanja di Shopee</a>
+            <a class="ds-btn ds-btn-outline" href="#produk"><i class="fa-solid fa-shirt"></i> Lihat Katalog</a>
+          </div>
+          <div class="ds-hero-stats">
+            <div class="ds-stat"><strong id="dsStatProduk">0+</strong><span>Produk Aktif</span></div>
+            <div class="ds-stat"><strong>Fast</strong><span>Respon Admin</span></div>
+            <div class="ds-stat"><strong>Aman</strong><span>Checkout Shopee</span></div>
+          </div>
+        </div>
+        <div class="ds-hero-visual">
+          <div class="ds-hero-img-wrap">
+            <span class="ds-hero-tag">✦ New Collection 2026</span>
+            <img data-store-hero="" src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=1200&q=80" alt="Dimas Store" />
+            <div class="ds-hero-float">
+              <div class="ds-hero-float-icon"><i class="fa-solid fa-fire"></i></div>
+              <div>
+                <h3>Daily outfit, tinggal checkout.</h3>
+                <p>Pilih produk → buka Shopee → selesai 🎉</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARQUEE -->
+      <div class="ds-marquee-wrap">
+        <div class="ds-marquee">
+          <div class="ds-marquee-track" id="dsMarquee1">
+            <span>Kaos Oversize</span><span class="dot">✦</span>
+            <span>Kemeja Casual</span><span class="dot">✦</span>
+            <span>Hoodie Kekinian</span><span class="dot">✦</span>
+            <span>Baju Koko</span><span class="dot">✦</span>
+            <span>Batik Modern</span><span class="dot">✦</span>
+            <span>Celana Casual</span><span class="dot">✦</span>
+            <span>Crewneck</span><span class="dot">✦</span>
+            <span>Kemeja Flannel</span><span class="dot">✦</span>
+            <span>Kaos Oversize</span><span class="dot">✦</span>
+            <span>Kemeja Casual</span><span class="dot">✦</span>
+            <span>Hoodie Kekinian</span><span class="dot">✦</span>
+            <span>Baju Koko</span><span class="dot">✦</span>
+            <span>Batik Modern</span><span class="dot">✦</span>
+            <span>Celana Casual</span><span class="dot">✦</span>
+            <span>Crewneck</span><span class="dot">✦</span>
+            <span>Kemeja Flannel</span><span class="dot">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KATEGORI -->
+    <section class="ds-cat-section" id="kategori">
+      <div class="ds-wrap">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+          <div>
+            <p class="ds-section-label">Temukan yang kamu suka</p>
+            <h2 class="ds-section-title">Kategori Pilihan</h2>
+          </div>
+          <a class="ds-btn ds-btn-outline ds-btn-sm" href="#produk">Lihat Semua →</a>
+        </div>
+        <div class="ds-cat-scroll" id="dsCategoryCards"></div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="ds-why-section">
+      <div class="ds-wrap">
+        <p class="ds-section-label">Kenapa pilih kami?</p>
+        <h2 class="ds-section-title" style="color:#fff;">Toko yang<br>bisa diandalkan.</h2>
+        <div class="ds-why-grid">
+          <div class="ds-why-card"><div class="ds-why-icon"><i class="fa-solid fa-leaf"></i></div><h3>Bahan Nyaman</h3><p>Produk dipilih dengan bahan nyaman untuk aktivitas harian</p></div>
+          <div class="ds-why-card"><div class="ds-why-icon"><i class="fa-solid fa-fire"></i></div><h3>Model Kekinian</h3><p>Berbagai model simpel, rapi, dan fleksibel untuk semua kesempatan</p></div>
+          <div class="ds-why-card"><div class="ds-why-icon"><i class="fa-solid fa-tags"></i></div><h3>Harga Jelas</h3><p>Harga ditampilkan transparan, langsung checkout via Shopee</p></div>
+          <div class="ds-why-card"><div class="ds-why-icon"><i class="fa-solid fa-rotate"></i></div><h3>Pilihan Beragam</h3><p>Kaos, hoodie, koko, batik, kemeja, dan terus diperbarui</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLER -->
+    <section class="ds-best-section">
+      <div class="ds-wrap">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+          <div>
+            <p class="ds-section-label">Banyak diminati</p>
+            <h2 class="ds-section-title">Best Seller</h2>
+          </div>
+        </div>
+        <div class="ds-best-scroll" id="dsBestSeller"></div>
+      </div>
+    </section>
+
+    <!-- KATALOG PRODUK -->
+    <section class="ds-products-section" id="produk">
+      <div class="ds-wrap">
+        <p class="ds-section-label">Temukan favoritmu</p>
+        <h2 class="ds-section-title">Katalog Produk</h2>
+        <div class="ds-toolbar">
+          <div class="ds-search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="ds-search" id="dsSearchInput" type="search" placeholder="Cari produk…" />
+          </div>
+          <div class="ds-pills" id="dsCategoryPills"></div>
+        </div>
+        <div class="ds-grid" id="dsProductGrid"></div>
+        <div class="ds-load-wrap">
+          <button class="ds-btn ds-btn-outline" id="dsLoadMore" type="button" style="display:none;">Tampilkan Semua Produk</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARA ORDER -->
+    <section class="ds-order-section" id="cara-order">
+      <div class="ds-wrap">
+        <p class="ds-section-label">Gampang banget</p>
+        <h2 class="ds-section-title">Cara Order</h2>
+        <div class="ds-order-grid">
+          <div class="ds-step"><div class="ds-step-num">01</div><div><h3>Pilih Produk</h3><p>Scroll katalog, cek model, ukuran, warna, dan harga yang tersedia.</p></div></div>
+          <div class="ds-step"><div class="ds-step-num">02</div><div><h3>Klik Shopee</h3><p>Tombol produk langsung membuka link Shopee sesuai produk yang dipilih.</p></div></div>
+          <div class="ds-step"><div class="ds-step-num">03</div><div><h3>Checkout Aman</h3><p>Selesaikan pembelian di Shopee atau tanya admin via WhatsApp.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASI -->
+    <section class="ds-location-section" id="lokasi">
+      <div class="ds-wrap">
+        <p class="ds-section-label">Kunjungi kami</p>
+        <h2 class="ds-section-title">Lokasi Toko</h2>
+        <div class="ds-loc-grid">
+          <div class="ds-loc-item"><div class="ds-loc-icon"><i class="fa-solid fa-location-dot"></i></div><div><h3>Tugumulyo, Sumatra Selatan</h3><p>Jl. Lintas Timur Tugumulyo, Blok F Lorong Ulan-Ulin, dekat Plang Toko Rini Hadi Pakaian.</p></div></div>
+          <div class="ds-loc-item"><div class="ds-loc-icon"><i class="fa-solid fa-clock"></i></div><div><h3>Jam Operasional</h3><p>Buka setiap hari pukul 07:30 sampai 16:00 WIB.</p></div></div>
+          <div class="ds-loc-item"><div class="ds-loc-icon"><i class="fa-solid fa-shop"></i></div><div><h3>Info Pembelian</h3><p>Cek produk di toko, tanya stok via WhatsApp, atau checkout langsung di Shopee.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="ds-testi-section">
+      <div class="ds-wrap">
+        <p class="ds-section-label">Kata mereka</p>
+        <h2 class="ds-section-title">Ulasan Pembeli</h2>
+        <div class="ds-testi-grid">
+          <div class="ds-testi-card"><div class="ds-stars">★★★★★</div><h3>Arka D.</h3><p>Bahannya nyaman dan ukuran sesuai. Cocok buat daily outfit.</p></div>
+          <div class="ds-testi-card"><div class="ds-stars">★★★★★</div><h3>Rizky M.</h3><p>Checkout gampang karena langsung diarahkan ke Shopee. Praktis!</p></div>
+          <div class="ds-testi-card"><div class="ds-stars">★★★★★</div><h3>Kevin S.</h3><p>Modelnya clean, tampilannya juga enak dilihat di HP.</p></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="ds-footer" id="kontak">
+    <div class="ds-wrap ds-footer-grid">
+      <div>
+        <div class="ds-footer-logo">DIMAS<em>STORE</em></div>
+        <p>Outfit casual dan streetwear kekinian. Berlokasi di Tugumulyo, Sumatra Selatan. Buka setiap hari 07:30–16:00 WIB.</p>
+        <div class="ds-footer-ctas">
+          <a class="ds-btn ds-btn-shopee" data-store-link="shopee_toko" href="#"><i class="fa-solid fa-bag-shopping"></i> Buka Toko Shopee</a>
+          <a class="ds-btn ds-btn-wa" data-store-link="whatsapp" href="#"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
+        </div>
+        <div class="ds-socials">
+          <a class="ds-social-btn" data-store-link="instagram" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="ds-social-btn" data-store-link="tiktok" href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="ds-social-btn" data-store-link="linktree" href="#" aria-label="Linktree"><i class="fa-solid fa-link"></i></a>
+          <a class="ds-social-btn" data-store-link="shopee_toko" href="#" aria-label="Shopee"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+        <p class="ds-copy">© 2026 Dimas Store. Dynamic catalog by Google Sheets.</p>
+      </div>
+      <div>
+        <div class="ds-footer-links">
+          <h4>Navigasi</h4>
+          <a href="#kategori">Kategori</a>
+          <a href="#produk">Katalog Produk</a>
+          <a href="#cara-order">Cara Order</a>
+          <a href="#lokasi">Lokasi Toko</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY -->
+  <div class="ds-sticky">
+    <a class="sp" data-store-link="shopee_toko" href="#"><i class="fa-solid fa-bag-shopping"></i> Shopee</a>
+    <a class="wa" data-store-link="whatsapp" href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  </div>
+
+  <!-- MODAL -->
+  <div class="ds-modal" id="dsProductModal" aria-hidden="true">
+    <div class="ds-modal-card">
+      <div class="ds-modal-img"><img id="dsModalImage" src="" alt="Produk" /></div>
+      <div class="ds-modal-body">
+        <div class="ds-modal-head">
+          <div>
+            <p class="ds-modal-kat" id="dsModalCategory"></p>
+            <h2 class="ds-modal-title" id="dsModalTitle"></h2>
+          </div>
+          <button class="ds-modal-close" id="dsModalClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <p class="ds-modal-desc" id="dsModalDesc"></p>
+        <div class="ds-modal-specs">
+          <div class="ds-spec-row"><span>Harga</span><span id="dsModalPrice"></span></div>
+          <div class="ds-spec-row"><span>Ukuran</span><span id="dsModalSize"></span></div>
+          <div class="ds-spec-row"><span>Warna</span><span id="dsModalColor"></span></div>
+        </div>
+        <div class="ds-modal-ctas">
+          <a class="ds-btn ds-btn-shopee" href="#" id="dsModalShopee" target="_blank" rel="noopener noreferrer" style="flex:1;"><i class="fa-solid fa-bag-shopping"></i> Beli di Shopee</a>
+          <a class="ds-btn ds-btn-outline" data-store-link="whatsapp" href="#" style="flex:1;"><i class="fa-brands fa-whatsapp"></i> Tanya Admin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+(function () {
+  const DEFAULTS = {
+    store_name: 'Dimas Store',
+    store_tagline: 'Outfit Casual & Streetwear Kekinian',
+    store_description: 'Pilihan baju nyaman, stylish, dan mudah dipakai untuk aktivitas harian.',
+    shopee_toko: '', instagram: '', tiktok: '', whatsapp: '',
+    whatsapp_number: '', whatsapp_text: 'Halo Dimas Store, saya mau tanya produk.',
+    linktree: '',
+    hero_image: 'https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=1200&q=80',
+    logo_text: 'DIMASSTORE'
+  };
+
+  const CATEGORY_IMAGES = {
+    'Kaos Oversize': 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80',
+    'Kemeja Casual': 'https://images.unsplash.com/photo-1596755094514-f87e32f85f98?auto=format&fit=crop&w=500&q=80',
+    'Hoodie': 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80',
+    'Crewneck': 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=500&q=80',
+    'Celana Casual': 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=500&q=80'
+  };
+
+  const state = {
+    settings: Object.assign({}, DEFAULTS),
+    products: [], activeCategory: 'Semua', search: '', showAll: false
+  };
+
+  const config = window.DIMAS_STORE_CONFIG || {};
+  const apiUrl = String(config.APPS_SCRIPT_URL || '').trim();
+
+  function rupiah(v) { return 'Rp ' + Number(v || 0).toLocaleString('id-ID'); }
+  function clean(v, fb = '') { return (v === undefined || v === null || v === '') ? fb : v; }
+  function esc(v) {
+    return String(v || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+  }
+  function nk(v) { return String(v||'').toLowerCase().replace(/[^a-z0-9]/g,''); }
+  function readAny(obj, keys, fb = '') {
+    if (!obj) return fb;
+    const lu = {}; Object.keys(obj).forEach(k => { lu[k]=obj[k]; lu[nk(k)]=obj[k]; });
+    for (let k of keys) { const d=lu[k], n=lu[nk(k)]; if (d!==undefined&&d!==null&&String(d).trim()!=='') return d; if (n!==undefined&&n!==null&&String(n).trim()!=='') return n; }
+    return fb;
+  }
+  function isPlaceholder(v) { const t=String(v||'').toLowerCase().trim(); return !t||t==='#'||t.includes('isi_')||t.includes('username')||t.includes('link-produk'); }
+  function cleanUrl(v, fb = '') {
+    let t = String(v||'').trim(); if (isPlaceholder(t)) return fb;
+    if (/^https?:\/\//i.test(t)) return t;
+    if (/^(shopee\.co\.id|instagram\.com|www\.instagram\.com|tiktok\.com|www\.tiktok\.com|linktr\.ee|wa\.me)\//i.test(t)) return 'https://'+t;
+    return t||fb;
+  }
+  function makeWaLink(num, msg) {
+    let d = String(num||'').replace(/\D/g,''); if (!d) return '';
+    if (d[0]==='0') d='62'+d.slice(1); if (d[0]==='8') d='62'+d;
+    return 'https://wa.me/'+d+'?text='+encodeURIComponent(String(msg||DEFAULTS.whatsapp_text));
+  }
+
+  function normalizeSettings(raw) {
+    raw = raw||{};
+    const waD = cleanUrl(readAny(raw,['whatsapp','WhatsApp','Whatsapp','WA_Link'],''));
+    const waNum = readAny(raw,['whatsapp_number','WhatsApp_Number','Nomor_WhatsApp','Nomor WA','No_WA'],'');
+    const waTxt = readAny(raw,['whatsapp_text','WhatsApp_Text','Pesan_WhatsApp'],DEFAULTS.whatsapp_text);
+    const waBuilt = makeWaLink(waNum, waTxt);
+    return {
+      store_name: String(readAny(raw,['store_name','Store_Name','Nama_Toko'],DEFAULTS.store_name)),
+      store_tagline: String(readAny(raw,['store_tagline','Store_Tagline','Tagline'],DEFAULTS.store_tagline)),
+      store_description: String(readAny(raw,['store_description','Store_Description','Deskripsi_Toko'],DEFAULTS.store_description)),
+      shopee_toko: cleanUrl(readAny(raw,['shopee_toko','Shopee_Toko','Shopee','Link_Shopee'],''),DEFAULTS.shopee_toko),
+      instagram: cleanUrl(readAny(raw,['instagram','Instagram','IG'],''),DEFAULTS.instagram),
+      tiktok: cleanUrl(readAny(raw,['tiktok','TikTok','Tiktok'],''),DEFAULTS.tiktok),
+      whatsapp_number: String(waNum||''), whatsapp_text: String(waTxt||DEFAULTS.whatsapp_text),
+      whatsapp: waBuilt||waD||'',
+      linktree: cleanUrl(readAny(raw,['linktree','Linktree','Link_Tree'],''),DEFAULTS.linktree),
+      hero_image: cleanUrl(readAny(raw,['hero_image','Hero_Image','Gambar_Hero'],''),DEFAULTS.hero_image),
+      logo_text: String(readAny(raw,['logo_text','Logo_Text','Logo'],DEFAULTS.logo_text))
+    };
+  }
+
+  function normalizeProduct(raw, idx) {
+    raw = raw||{};
+    const link = cleanUrl(readAny(raw,['link_shopee','Link_Shopee','Shopee','shopee'],''),state.settings.shopee_toko);
+    return {
+      id: String(readAny(raw,['id','ID'],'') || 'p_'+idx),
+      nama_produk: String(readAny(raw,['nama_produk','Nama_Produk','name'],'Produk Dimas Store')),
+      slug: String(readAny(raw,['slug','Slug'],'')),
+      kategori: String(readAny(raw,['kategori','Kategori'],'Produk')),
+      harga: Number(readAny(raw,['harga','Harga'],0)||0),
+      harga_coret: Number(readAny(raw,['harga_coret','Harga_Coret'],0)||0),
+      deskripsi: String(readAny(raw,['deskripsi','Deskripsi'],'')),
+      ukuran: String(readAny(raw,['ukuran','Ukuran','Size'],'')),
+      warna: String(readAny(raw,['warna','Warna','Color'],'')),
+      label: String(readAny(raw,['label','Label'],'')),
+      best_seller: ['true','ya','yes','1','aktif','best'].includes(String(readAny(raw,['best_seller','Best_Seller'],'')).toLowerCase()),
+      foto_1: cleanUrl(readAny(raw,['foto_1','Foto_1','image'],'')),
+      foto_2: cleanUrl(readAny(raw,['foto_2','Foto_2'],'')),
+      foto_3: cleanUrl(readAny(raw,['foto_3','Foto_3'],'')),
+      link_shopee: link,
+      status: String(readAny(raw,['status','Status'],'Aktif')),
+      urutan: Number(readAny(raw,['urutan','Urutan'],9999)||9999),
+      _key: ''
+    };
+  }
+
+  function jsonp(url) {
+    return new Promise((res, rej) => {
+      const name = 'dsCallback_'+Date.now()+'_'+Math.floor(Math.random()*999999);
+      const script = document.createElement('script');
+      const sep = url.includes('?')?'&':'?';
+      script.src = url+sep+'callback='+encodeURIComponent(name)+'&cache='+Date.now();
+      const t = setTimeout(() => { cleanup(); rej(new Error('JSONP timeout')); }, 30000);
+      const cleanup = () => { try{delete window[name];}catch(e){window[name]=undefined;} script.parentNode&&script.parentNode.removeChild(script); };
+      window[name] = d => { clearTimeout(t); cleanup(); res(d); };
+      script.onerror = () => { clearTimeout(t); cleanup(); rej(new Error('Script JSONP gagal')); };
+      script.async = true;
+      (document.body||document.documentElement).appendChild(script);
+    });
+  }
+
+  function productImg(p) {
+    return p.foto_1||p.foto_2||p.foto_3||'https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=900&q=80';
+  }
+  function productLink(p) { return cleanUrl(p.link_shopee, state.settings.shopee_toko||''); }
+
+  function getCategories() {
+    return ['Semua', ...Array.from(new Set(state.products.map(p=>p.kategori).filter(Boolean)))];
+  }
+
+  function filteredProducts() {
+    const kw = state.search.trim().toLowerCase();
+    return state.products.filter(p => {
+      const catOk = state.activeCategory==='Semua'||p.kategori===state.activeCategory;
+      const txt = [p.nama_produk,p.kategori,p.ukuran,p.warna,p.deskripsi].join(' ').toLowerCase();
+      return catOk && (!kw||txt.includes(kw));
+    });
+  }
+
+  function resolveLink(key) {
+    if (key==='whatsapp') { return cleanUrl(state.settings.whatsapp,'')||makeWaLink(state.settings.whatsapp_number, state.settings.whatsapp_text); }
+    return cleanUrl(state.settings[key],'');
+  }
+
+  function setStoreLinks() {
+    document.querySelectorAll('#ds-app [data-store-link]').forEach(el => {
+      const key = el.getAttribute('data-store-link');
+      const href = resolveLink(key);
+      el.onclick = null;
+      if (href) {
+        el.href = href; el.target = '_blank'; el.rel = 'noopener noreferrer';
+        el.style.opacity = ''; el.style.pointerEvents = '';
+      } else {
+        el.href = 'javascript:void(0)'; el.removeAttribute('target'); el.removeAttribute('rel');
+        el.style.opacity = '.5';
+        el.onclick = e => e.preventDefault();
+      }
+    });
+  }
+
+  function renderSettings() {
+    const s = state.settings;
+    const titleEl = document.querySelector('#ds-app [data-store-title]');
+    const descEl = document.querySelector('#ds-app [data-store-description]');
+    const heroEl = document.querySelector('#ds-app [data-store-hero]');
+    const logoEl = document.querySelector('#ds-app [data-store-logo]');
+    const statEl = document.getElementById('dsStatProduk');
+    if (titleEl) titleEl.textContent = s.store_name||DEFAULTS.store_name;
+    if (descEl) descEl.textContent = s.store_description||DEFAULTS.store_description;
+    if (heroEl) heroEl.src = s.hero_image||DEFAULTS.hero_image;
+    if (statEl) statEl.textContent = state.products.length + '+';
+    if (logoEl) {
+      const n = String(s.store_name||'Dimas Store').replace(/\s+/g,' ').trim().split(' ');
+      logoEl.innerHTML = esc(n[0].toUpperCase())+'<em>'+esc((n.slice(1).join('')||'STORE').toUpperCase())+'</em>';
+    }
+    setStoreLinks();
+  }
+
+  function renderCategoryCards() {
+    const wrap = document.getElementById('dsCategoryCards');
+    if (!wrap) return;
+    const cats = getCategories().filter(c=>c!=='Semua');
+    wrap.innerHTML = cats.length ? cats.map(cat => {
+      const sample = state.products.find(p=>p.kategori===cat);
+      const img = CATEGORY_IMAGES[cat]||productImg(sample||{});
+      return `<div class="ds-cat-item" data-set-cat="${esc(cat)}"><div class="ds-cat-img"><img src="${esc(img)}" alt="${esc(cat)}" loading="lazy"></div><p class="ds-cat-name">${esc(cat)}</p></div>`;
+    }).join('') : '';
+    wrap.querySelectorAll('[data-set-cat]').forEach(el => {
+      el.addEventListener('click', function() {
+        state.activeCategory = this.getAttribute('data-set-cat');
+        state.showAll = true; renderProductArea();
+        document.getElementById('produk')?.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  }
+
+  function renderPills() {
+    const wrap = document.getElementById('dsCategoryPills');
+    if (!wrap) return;
+    wrap.innerHTML = getCategories().map(cat =>
+      `<button type="button" class="ds-pill${cat===state.activeCategory?' active':''}" data-cat="${esc(cat)}">${esc(cat)}</button>`
+    ).join('');
+    wrap.querySelectorAll('[data-cat]').forEach(btn => {
+      btn.addEventListener('click', function() { state.activeCategory=this.getAttribute('data-cat'); state.showAll=false; renderProductArea(); });
+    });
+  }
+
+  function productCardHTML(p, mode='grid') {
+    const label = clean(p.label);
+    const oldPrice = Number(p.harga_coret||0)>0 ? `<span class="ds-price-old">${rupiah(p.harga_coret)}</span>` : '';
+    const slideClass = mode==='slide' ? ' slide-card' : '';
+    return `
+      <article class="ds-product-card${slideClass}">
+        <div class="ds-prod-media">
+          ${label ? `<span class="ds-prod-badge">${esc(label)}</span>` : ''}
+          <img src="${esc(productImg(p))}" alt="${esc(p.nama_produk)}" loading="lazy">
+        </div>
+        <div class="ds-prod-body">
+          <p class="ds-prod-kat">${esc(clean(p.kategori,'Produk'))}</p>
+          <h3 class="ds-prod-name">${esc(clean(p.nama_produk,'Produk'))}</h3>
+          <div class="ds-prod-meta">
+            <span>Ukuran: ${esc(clean(p.ukuran,'-'))}</span>
+            <span>Warna: ${esc(clean(p.warna,'-'))}</span>
+          </div>
+          <div class="ds-prod-price"><span class="ds-price">${rupiah(p.harga)}</span>${oldPrice}</div>
+          <div class="ds-prod-actions">
+            <button type="button" class="ds-detail-btn" data-pkey="${esc(p._key)}" aria-label="Detail"><i class="fa-solid fa-eye"></i></button>
+            <a class="ds-buy-btn" href="${esc(productLink(p))}" target="_blank" rel="noopener noreferrer">Beli di Shopee</a>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function bindDetailBtns(scope) {
+    scope.querySelectorAll('[data-pkey]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const p = state.products.find(x=>String(x._key)===String(this.getAttribute('data-pkey')));
+        if (p) openModal(p);
+      });
+    });
+  }
+
+  function renderBestSeller() {
+    const wrap = document.getElementById('dsBestSeller');
+    if (!wrap) return;
+    const best = state.products.filter(p=>p.best_seller).slice(0,10);
+    const data = best.length ? best : state.products.slice(0,8);
+    wrap.innerHTML = data.length ? data.map(p=>productCardHTML(p,'slide')).join('') : '';
+    bindDetailBtns(wrap);
+  }
+
+  function renderProducts() {
+    const grid = document.getElementById('dsProductGrid');
+    const btn = document.getElementById('dsLoadMore');
+    if (!grid) return;
+    const data = filteredProducts();
+    const shown = state.showAll ? data : data.slice(0,8);
+    grid.innerHTML = shown.length ? shown.map(p=>productCardHTML(p,'grid')).join('') :
+      '<div class="ds-empty-state">Produk tidak ditemukan. Coba kata kunci lain.</div>';
+    bindDetailBtns(grid);
+    if (btn) { btn.style.display = data.length>8?'':'none'; btn.textContent = state.showAll?'Tampilkan Lebih Sedikit':'Tampilkan Semua Produk'; }
+  }
+
+  function renderProductArea() { renderPills(); renderProducts(); }
+
+  function openModal(p) {
+    const modal = document.getElementById('dsProductModal');
+    if (!modal) return;
+    document.getElementById('dsModalImage').src = productImg(p);
+    document.getElementById('dsModalCategory').textContent = p.kategori||'Produk';
+    document.getElementById('dsModalTitle').textContent = p.nama_produk||'Produk Dimas Store';
+    document.getElementById('dsModalDesc').textContent = p.deskripsi||'Detail bisa dicek langsung di Shopee.';
+    document.getElementById('dsModalPrice').textContent = rupiah(p.harga);
+    document.getElementById('dsModalSize').textContent = p.ukuran||'-';
+    document.getElementById('dsModalColor').textContent = p.warna||'-';
+    document.getElementById('dsModalShopee').href = productLink(p);
+    modal.classList.add('show'); modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('dsProductModal');
+    if (!modal) return;
+    modal.classList.remove('show'); modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  function bindEvents() {
+    const search = document.getElementById('dsSearchInput');
+    const loadMore = document.getElementById('dsLoadMore');
+    const closeBtn = document.getElementById('dsModalClose');
+    const modal = document.getElementById('dsProductModal');
+    if (search) search.addEventListener('input', function() { state.search=this.value; state.showAll=false; renderProducts(); });
+    if (loadMore) loadMore.addEventListener('click', () => { state.showAll=!state.showAll; renderProducts(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) modal.addEventListener('click', e => { if (e.target===modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key==='Escape') closeModal(); });
+  }
+
+  function resolvePayload(data) {
+    const payload = data||{};
+    if (payload.ok===false) throw new Error(payload.message||'API error');
+    const sRaw = payload.settings||payload.data?.settings||(payload.shopee_toko||payload.Store_Name?payload:{});
+    const pRaw = Array.isArray(payload.products)?payload.products:(Array.isArray(payload.data?.products)?payload.data.products:(Array.isArray(payload)?payload:[]));
+    state.settings = Object.assign({},DEFAULTS,normalizeSettings(sRaw));
+    if (!state.settings.whatsapp&&state.settings.whatsapp_number) state.settings.whatsapp = makeWaLink(state.settings.whatsapp_number,state.settings.whatsapp_text);
+    state.products = pRaw.map((item,i) => {
+      const p = normalizeProduct(item,i);
+      p._key = p.id||p.slug||'p_'+i;
+      if (!p.id) p.id = p._key;
+      return p;
+    }).filter(p=>String(p.status||'Aktif').toLowerCase()==='aktif');
+  }
+
+  function renderAll() { renderSettings(); renderCategoryCards(); renderBestSeller(); renderProductArea(); }
+
+  async function init() {
+    const loading = document.getElementById('dsLoading');
+    bindEvents();
+    try {
+      if (!apiUrl||apiUrl.includes('ISI_')) { state.settings=Object.assign({},DEFAULTS); state.products=[]; renderAll(); return; }
+      const sep = apiUrl.includes('?')?'&':'?';
+      const data = await jsonp(apiUrl+sep+'action=store');
+      resolvePayload(data); renderAll();
+    } catch(err) {
+      console.error('Dimas Store error:', err);
+      state.settings=Object.assign({},DEFAULTS); state.products=[]; renderAll();
+      const grid = document.getElementById('dsProductGrid');
+      if (grid) grid.innerHTML = '<div class="ds-empty-state"><strong>Data belum terbaca dari spreadsheet.</strong><br>Pastikan Apps Script sudah di-deploy dengan akses Anyone.</div>';
+    } finally {
+      if (loading) loading.remove();
+    }
+  }
+
+  if (document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true}); else init();
+})();
+</script>
