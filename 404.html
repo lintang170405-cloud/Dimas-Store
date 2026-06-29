@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" id="dsMetaDescription" content="Belanja kaos, kemeja, hoodie, batik, baju koko, dan celana di Dimas Store Tugumulyo. Cek stok melalui WhatsApp atau checkout aman lewat Shopee.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#1c1917">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" id="dsOgTitle" content="Dimas Store | Toko Pakaian Casual & Streetwear di Tugumulyo">
+  <meta property="og:description" id="dsOgDescription" content="Temukan pilihan pakaian untuk kerja, kuliah, ibadah, acara keluarga, dan aktivitas santai. Cek ukuran serta stok langsung ke admin Dimas Store.">
+  <meta property="og:image" id="dsOgImage" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="dsTwitterTitle" content="Dimas Store | Toko Pakaian Casual & Streetwear di Tugumulyo">
+  <meta name="twitter:description" id="dsTwitterDescription" content="Koleksi pakaian lokal dengan pilihan kaos, kemeja, hoodie, batik, baju koko, dan celana untuk berbagai kebutuhan.">
+  <link rel="canonical" id="dsCanonical" href="">
+  <script type="application/ld+json" id="dsStructuredData">{}</script>
+  <title>Dimas Store | Toko Pakaian Casual & Streetwear di Tugumulyo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap');
+
+html,body{margin:0;padding:0;min-height:100%;background:#fafaf9}
+body{overflow-x:hidden}
+body.ds-page-locked{overflow:hidden}
+#dimas-store-app{min-height:100vh}
+
+#dimas-store-app {
+  --ds-ink:#1c1917;
+  --ds-ink-2:#44403c;
+  --ds-paper:#fafaf9;
+  --ds-paper-2:#f3f1ed;
+  --ds-white:#fff;
+  --ds-gold:#a16207;
+  --ds-gold-soft:#fef3c7;
+  --ds-flame:#c2410c;
+  --ds-muted:#6b665f;
+  --ds-line:#d6d3d1;
+  --ds-line-dark:rgba(255,255,255,.14);
+  --ds-shadow:0 24px 70px rgba(28,25,23,.16);
+  --ds-wrap:min(1220px,calc(100% - 36px));
+  --ds-display:'Syne',system-ui,sans-serif;
+  --ds-body:'Manrope',system-ui,sans-serif;
+  width:100%;
+  overflow-x:clip;
+  overflow-y:visible;
+  color:var(--ds-ink);
+  background:var(--ds-paper);
+  font-family:var(--ds-body);
+  -webkit-font-smoothing:antialiased;
+}
+#dimas-store-app,
+#dimas-store-app *{box-sizing:border-box}
+#dimas-store-app a{color:inherit;text-decoration:none}
+#dimas-store-app img{display:block;max-width:100%}
+#dimas-store-app button,
+#dimas-store-app input{font:inherit;color:inherit}
+#dimas-store-app button{touch-action:manipulation}
+#dimas-store-app .ds-wrap{width:var(--ds-wrap);margin-inline:auto}
+#dimas-store-app .ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#dimas-store-app.ds-locked{height:100vh;overflow:hidden}
+
+/* Buttons */
+#dimas-store-app .ds-btn{
+  min-height:48px;padding:0 22px;border:1.5px solid transparent;border-radius:3px;
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-size:12px;font-weight:800;letter-spacing:.045em;text-transform:uppercase;
+  cursor:pointer;white-space:nowrap;transition:transform .18s ease,background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .18s ease
+}
+#dimas-store-app .ds-btn:hover{transform:translateY(-1px)}
+#dimas-store-app .ds-btn:focus-visible,
+#dimas-store-app button:focus-visible,
+#dimas-store-app input:focus-visible,
+#dimas-store-app a:focus-visible{outline:3px solid var(--ds-gold);outline-offset:3px}
+#dimas-store-app .ds-btn-dark{background:var(--ds-ink);color:#fff}
+#dimas-store-app .ds-btn-dark:hover{background:#2c2926;box-shadow:0 10px 30px rgba(28,25,23,.2)}
+#dimas-store-app .ds-btn-gold{background:var(--ds-gold);color:#fff}
+#dimas-store-app .ds-btn-gold:hover{background:#854d0e;box-shadow:0 10px 28px rgba(161,98,7,.28)}
+#dimas-store-app .ds-btn-flame{background:var(--ds-flame);color:#fff}
+#dimas-store-app .ds-btn-flame:hover{background:#9a3412}
+#dimas-store-app .ds-btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.36)}
+#dimas-store-app .ds-btn-light:hover{background:rgba(255,255,255,.08);border-color:#fff}
+#dimas-store-app .ds-btn-outline{background:transparent;color:var(--ds-ink);border-color:var(--ds-line)}
+#dimas-store-app .ds-btn-outline:hover{border-color:var(--ds-ink)}
+#dimas-store-app .ds-btn-small{min-height:40px;padding:0 16px;font-size:11px}
+
+/* Loading — tidak memblokir halaman lama */
+#dimas-store-app .ds-loading{
+  position:fixed;inset:auto 16px 16px auto;z-index:999;width:auto;min-width:190px;
+  padding:12px 14px;border:1px solid var(--ds-line);background:rgba(255,255,255,.94);
+  box-shadow:0 14px 40px rgba(28,25,23,.15);display:flex;align-items:center;gap:10px;
+  font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+  transition:opacity .2s ease,transform .2s ease
+}
+#dimas-store-app .ds-loading.is-hidden{opacity:0;transform:translateY(8px);pointer-events:none}
+#dimas-store-app .ds-spinner{width:20px;height:20px;border-radius:50%;border:2px solid var(--ds-line);border-top-color:var(--ds-gold);animation:dsSpin .8s linear infinite}
+@keyframes dsSpin{to{transform:rotate(360deg)}}
+
+/* Header */
+#dimas-store-app .ds-header{
+  position:sticky;top:0;z-index:80;height:68px;background:var(--ds-ink);color:#fff;
+  border-bottom:1px solid var(--ds-line-dark);transition:background-color .24s ease,color .24s ease,border-color .24s ease
+}
+#dimas-store-app .ds-header.is-solid{background:rgba(250,250,249,.94);color:var(--ds-ink);backdrop-filter:blur(18px);border-color:var(--ds-line)}
+#dimas-store-app .ds-header-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+#dimas-store-app .ds-brand{display:flex;align-items:center;gap:11px;min-width:0}
+#dimas-store-app .ds-brand-mark{width:40px;height:40px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-family:var(--ds-display);font-size:10px;font-weight:800;letter-spacing:-.07em;flex:0 0 auto}
+#dimas-store-app .ds-brand-copy{min-width:0}
+#dimas-store-app .ds-brand-copy strong{display:block;font-family:var(--ds-display);font-size:14px;font-weight:800;letter-spacing:-.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px}
+#dimas-store-app .ds-brand-copy small{display:block;margin-top:1px;font-size:8px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;opacity:.55}
+#dimas-store-app .ds-nav{display:none;align-items:center;gap:28px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+#dimas-store-app .ds-nav a{opacity:.72;position:relative}
+#dimas-store-app .ds-nav a:hover{opacity:1}
+#dimas-store-app .ds-nav a::after{content:'';position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:currentColor;transition:right .18s ease}
+#dimas-store-app .ds-nav a:hover::after{right:0}
+#dimas-store-app .ds-header-actions{display:flex;align-items:center;gap:8px}
+#dimas-store-app .ds-menu-btn{width:42px;height:42px;border:1.5px solid currentColor;background:transparent;display:grid;place-items:center;cursor:pointer}
+#dimas-store-app .ds-menu-lines{display:grid;gap:4px;width:17px}
+#dimas-store-app .ds-menu-lines span{height:1.5px;background:currentColor;display:block}
+
+/* Mobile menu */
+#dimas-store-app .ds-mobile-menu{position:fixed;inset:0;z-index:120;background:var(--ds-ink);color:#fff;padding:22px;display:grid;grid-template-rows:auto 1fr auto;opacity:0;pointer-events:none;transition:opacity .2s ease}
+#dimas-store-app .ds-mobile-menu.is-open{opacity:1;pointer-events:auto}
+#dimas-store-app .ds-mobile-head{display:flex;align-items:center;justify-content:space-between}
+#dimas-store-app .ds-mobile-close{width:44px;height:44px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;cursor:pointer;font-size:18px}
+#dimas-store-app .ds-mobile-nav{display:grid;align-content:center;gap:14px}
+#dimas-store-app .ds-mobile-nav a{font-family:var(--ds-display);font-size:clamp(2.5rem,11vw,4.8rem);font-weight:800;letter-spacing:-.07em;line-height:.95}
+#dimas-store-app .ds-mobile-nav a:hover{color:#d6b86b}
+#dimas-store-app .ds-mobile-foot{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+
+/* Hero */
+#dimas-store-app .ds-hero{position:relative;min-height:calc(100svh - 68px);background:var(--ds-ink);color:#fff;overflow:hidden;display:flex}
+#dimas-store-app .ds-hero-media{position:absolute;inset:0}
+#dimas-store-app .ds-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .75s ease,transform 6s ease}
+#dimas-store-app .ds-hero-media img.is-active{opacity:1;transform:scale(1)}
+#dimas-store-app .ds-hero-overlay{position:absolute;inset:0;background:linear-gradient(103deg,rgba(28,25,23,.97) 0%,rgba(28,25,23,.91) 43%,rgba(28,25,23,.34) 73%,rgba(28,25,23,.14) 100%)}
+#dimas-store-app .ds-hero-grain{position:absolute;inset:0;opacity:.07;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+#dimas-store-app .ds-hero-body{position:relative;z-index:2;width:var(--ds-wrap);margin:auto;padding:58px 0 46px;display:grid;grid-template-columns:1fr;gap:44px;align-items:end}
+#dimas-store-app .ds-hero-label{display:flex;align-items:center;gap:13px;margin:0 0 18px;font-size:10px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+#dimas-store-app .ds-hero-label::before{content:'';width:38px;height:1.5px;background:var(--ds-gold)}
+#dimas-store-app .ds-hero-tagline{margin:0 0 13px;max-width:720px;color:#e6c76f;font-size:clamp(.78rem,1.35vw,1.02rem);font-weight:800;letter-spacing:.08em;line-height:1.45;text-transform:uppercase}#dimas-store-app .ds-hero h1{margin:0;max-width:850px;font-family:var(--ds-display);font-size:clamp(2.65rem,6.6vw,6.35rem);font-weight:800;line-height:.94;letter-spacing:-.065em;text-transform:none;text-wrap:balance}
+#dimas-store-app .ds-hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1.4px rgba(255,255,255,.7)}
+#dimas-store-app .ds-hero-desc{max-width:560px;margin:26px 0 0;color:rgba(255,255,255,.67);font-size:14px;line-height:1.8}
+#dimas-store-app .ds-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+#dimas-store-app .ds-hero-stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+#dimas-store-app .ds-hstat strong{display:block;font-family:var(--ds-display);font-size:27px;font-weight:800;letter-spacing:-.05em}
+#dimas-store-app .ds-hstat span{display:block;margin-top:2px;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.42)}
+#dimas-store-app .ds-hero-index{display:none;border-top:1px solid rgba(255,255,255,.2);align-self:center}
+#dimas-store-app .ds-hero-index-label{margin:0;padding:0 0 10px;font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:rgba(255,255,255,.36)}
+#dimas-store-app .ds-hero-index-btn{width:100%;padding:13px 0;border:0;border-bottom:1px solid rgba(255,255,255,.14);background:transparent;color:rgba(255,255,255,.48);display:grid;grid-template-columns:28px 1fr;gap:10px;text-align:left;cursor:pointer;transition:color .18s ease,padding-left .18s ease}
+#dimas-store-app .ds-hero-index-btn:hover,
+#dimas-store-app .ds-hero-index-btn.is-active{color:#fff;padding-left:5px}
+#dimas-store-app .ds-hero-index-btn span{font-size:10px;opacity:.5}
+#dimas-store-app .ds-hero-index-btn strong{font-size:12px;line-height:1.4}
+#dimas-store-app .ds-current-product{position:absolute;z-index:3;right:20px;bottom:18px;max-width:280px;padding:12px 14px;background:rgba(250,250,249,.9);color:var(--ds-ink);border:1px solid rgba(255,255,255,.75);backdrop-filter:blur(16px)}
+#dimas-store-app .ds-current-product small{display:block;font-size:8px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ds-gold)}
+#dimas-store-app .ds-current-product strong{display:block;margin-top:4px;font-family:var(--ds-display);font-size:13px;line-height:1.25}
+
+/* Ticker */
+#dimas-store-app .ds-ticker{overflow:hidden;background:var(--ds-gold);color:#fff}
+#dimas-store-app .ds-ticker-track{display:flex;width:max-content;padding:11px 0;animation:dsTicker 28s linear infinite}
+#dimas-store-app .ds-ticker-group{display:flex;gap:34px;padding-right:34px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+#dimas-store-app .ds-ticker-group span::after{content:'·';margin-left:34px;opacity:.45}
+@keyframes dsTicker{to{transform:translateX(-50%)}}
+
+/* Shared section */
+#dimas-store-app .ds-section{padding:88px 0;background:var(--ds-paper)}
+#dimas-store-app .ds-section-alt{background:var(--ds-paper-2)}
+#dimas-store-app .ds-section-dark{background:var(--ds-ink);color:#fff}
+#dimas-store-app .ds-section-head{margin-bottom:38px}
+#dimas-store-app .ds-eyebrow{margin:0 0 11px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ds-muted)}
+#dimas-store-app .ds-section-dark .ds-eyebrow{color:rgba(255,255,255,.36)}
+#dimas-store-app .ds-section-title{margin:0;max-width:900px;font-family:var(--ds-display);font-size:clamp(2rem,4.7vw,4.35rem);font-weight:800;line-height:1;letter-spacing:-.06em;text-wrap:balance}
+#dimas-store-app .ds-section-desc{max-width:650px;margin:15px 0 0;color:var(--ds-muted);font-size:14px;line-height:1.8}
+#dimas-store-app .ds-section-dark .ds-section-desc{color:rgba(255,255,255,.5)}
+
+/* Filters + rail */
+#dimas-store-app .ds-filter-row{display:flex;gap:8px;overflow-x:auto;padding:2px 0 16px;scrollbar-width:none}
+#dimas-store-app .ds-filter-row::-webkit-scrollbar{display:none}
+#dimas-store-app .ds-filter-btn{min-height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--ds-line);background:transparent;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease}
+#dimas-store-app .ds-filter-btn:hover{border-color:var(--ds-ink)}
+#dimas-store-app .ds-filter-btn.is-active{background:var(--ds-ink);color:#fff;border-color:var(--ds-ink)}
+#dimas-store-app .ds-product-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(270px,31vw);gap:15px;overflow-x:auto;scroll-snap-type:inline mandatory;overscroll-behavior-inline:contain;padding:2px max(18px,calc((100vw - 1220px)/2)) 20px;scrollbar-width:thin;scrollbar-color:var(--ds-gold) transparent}
+#dimas-store-app .ds-product-card{scroll-snap-align:start;position:relative;min-height:485px;background:#e7e5e4;border:1px solid var(--ds-line);overflow:hidden;cursor:pointer}
+#dimas-store-app .ds-product-media{position:absolute;inset:0;overflow:hidden}
+#dimas-store-app .ds-product-media img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+#dimas-store-app .ds-product-card:hover .ds-product-media img{transform:scale(1.04)}
+#dimas-store-app .ds-product-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 36%,rgba(28,25,23,.82) 100%)}
+#dimas-store-app .ds-product-copy{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}
+#dimas-store-app .ds-product-cat{margin:0 0 5px;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.63)}
+#dimas-store-app .ds-product-name{margin:0;font-family:var(--ds-display);font-size:clamp(1.15rem,2.1vw,1.65rem);font-weight:800;line-height:1.05;letter-spacing:-.045em}
+#dimas-store-app .ds-product-price{margin:9px 0 0;font-size:14px;font-weight:800}
+#dimas-store-app .ds-price-old,#dimas-store-app .ds-grid-price-old,#dimas-store-app [data-old-price]{display:none!important}
+#dimas-store-app .ds-product-open{position:absolute;z-index:3;top:13px;right:13px;width:43px;height:43px;border-radius:50%;border:0;background:rgba(255,255,255,.92);font-size:23px;font-weight:300;cursor:pointer;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+#dimas-store-app .ds-product-card:hover .ds-product-open{background:var(--ds-gold);color:#fff;transform:rotate(45deg)}
+#dimas-store-app .ds-empty{padding:44px;border:1.5px dashed var(--ds-line);color:var(--ds-muted);text-align:center;background:#fff;min-width:min(620px,calc(100vw - 36px));line-height:1.75}
+
+/* Identity */
+#dimas-store-app .ds-identity-grid{display:grid;grid-template-columns:1fr;gap:14px}
+#dimas-store-app .ds-photo-stack{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:260px 260px;gap:12px}
+#dimas-store-app .ds-photo-stack figure{margin:0;position:relative;overflow:hidden;background:#37332f;border:1px solid var(--ds-line-dark)}
+#dimas-store-app .ds-photo-stack figure:first-child{grid-row:1/3}
+#dimas-store-app .ds-photo-stack img{width:100%;height:100%;object-fit:cover;filter:saturate(.82)}
+#dimas-store-app .ds-photo-stack figure::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(28,25,23,.5) 100%)}
+#dimas-store-app .ds-pillars{display:grid;border:1px solid var(--ds-line-dark)}
+#dimas-store-app .ds-pillar{padding:25px 24px;border-bottom:1px solid var(--ds-line-dark);display:grid;grid-template-columns:34px 1fr;gap:16px;transition:background-color .18s ease}
+#dimas-store-app .ds-pillar:last-child{border-bottom:0}
+#dimas-store-app .ds-pillar:hover{background:rgba(255,255,255,.05)}
+#dimas-store-app .ds-pillar-num{font-size:10px;font-weight:800;color:#d6b86b;padding-top:3px}
+#dimas-store-app .ds-pillar h3{margin:0 0 7px;font-family:var(--ds-display);font-size:16px;font-weight:700;letter-spacing:-.035em}
+#dimas-store-app .ds-pillar p{margin:0;color:rgba(255,255,255,.5);font-size:12px;line-height:1.72}
+
+/* Wardrobe */
+#dimas-store-app .ds-wardrobe{display:grid;grid-template-columns:1fr;background:#fff;border:1px solid var(--ds-line)}
+#dimas-store-app .ds-wardrobe-list{padding:24px;border-bottom:1px solid var(--ds-line)}
+#dimas-store-app .ds-wardrobe-list h3{margin:0;font-family:var(--ds-display);font-size:18px;font-weight:800;letter-spacing:-.04em}
+#dimas-store-app .ds-wardrobe-list>p{margin:8px 0 16px;color:var(--ds-muted);font-size:12px;line-height:1.65}
+#dimas-store-app .ds-wardrobe-items{display:grid;gap:7px}
+#dimas-store-app .ds-wardrobe-item{width:100%;padding:10px;border:1.5px solid var(--ds-line);background:transparent;display:grid;grid-template-columns:48px 1fr;gap:11px;align-items:center;text-align:left;cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease}
+#dimas-store-app .ds-wardrobe-item:hover{border-color:var(--ds-ink)}
+#dimas-store-app .ds-wardrobe-item.is-active{background:var(--ds-ink);color:#fff;border-color:var(--ds-ink)}
+#dimas-store-app .ds-wardrobe-thumb{width:48px;height:58px;object-fit:cover}
+#dimas-store-app .ds-wardrobe-item small{display:block;margin-bottom:3px;font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.55}
+#dimas-store-app .ds-wardrobe-item strong{display:block;font-size:11px;line-height:1.35}
+#dimas-store-app .ds-wardrobe-stage{position:relative;min-height:570px;background:#ddd;overflow:hidden}
+#dimas-store-app .ds-wardrobe-stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#dimas-store-app .ds-wardrobe-stage::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 34%,rgba(28,25,23,.86) 100%)}
+#dimas-store-app .ds-wardrobe-copy{position:absolute;z-index:2;left:24px;right:24px;bottom:24px;color:#fff}
+#dimas-store-app .ds-wardrobe-cat{margin:0 0 7px;font-size:9px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.58)}
+#dimas-store-app .ds-wardrobe-copy h3{margin:0;font-family:var(--ds-display);font-size:clamp(1.9rem,4.2vw,3.7rem);font-weight:800;line-height:.95;letter-spacing:-.06em}
+#dimas-store-app .ds-wardrobe-copy p{max-width:650px;margin:11px 0 18px;color:rgba(255,255,255,.66);font-size:13px;line-height:1.7}
+#dimas-store-app .ds-wardrobe-actions{display:flex;gap:9px;flex-wrap:wrap}
+
+/* Catalog grid */
+#dimas-store-app .ds-catalog-toolbar{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:20px}
+#dimas-store-app .ds-search{position:relative}
+#dimas-store-app .ds-search::before{content:'⌕';position:absolute;left:15px;top:50%;transform:translateY(-52%);font-size:20px;color:var(--ds-muted)}
+#dimas-store-app .ds-search input{width:100%;min-height:48px;padding:0 15px 0 42px;border:1.5px solid var(--ds-line);background:#fff;border-radius:0;font-size:12px;font-weight:700;outline:none}
+#dimas-store-app .ds-search input:focus{border-color:var(--ds-gold);box-shadow:0 0 0 3px rgba(161,98,7,.11)}
+#dimas-store-app .ds-catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#dimas-store-app .ds-grid-card{background:#fff;border:1px solid var(--ds-line);min-width:0;display:flex;flex-direction:column}
+#dimas-store-app .ds-grid-media{aspect-ratio:3/4;overflow:hidden;background:#e7e5e4;cursor:pointer}
+#dimas-store-app .ds-grid-media img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+#dimas-store-app .ds-grid-card:hover .ds-grid-media img{transform:scale(1.035)}
+#dimas-store-app .ds-grid-body{padding:14px;display:flex;flex-direction:column;flex:1}
+#dimas-store-app .ds-grid-cat{margin:0 0 5px;font-size:8px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ds-gold)}
+#dimas-store-app .ds-grid-title{margin:0;font-family:var(--ds-display);font-size:14px;font-weight:700;line-height:1.22;letter-spacing:-.035em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#dimas-store-app .ds-grid-meta{display:grid;gap:3px;margin:10px 0;color:var(--ds-muted);font-size:10px;line-height:1.45}
+#dimas-store-app .ds-grid-price{margin-top:auto;font-size:14px;font-weight:800}
+#dimas-store-app .ds-grid-actions{display:grid;grid-template-columns:42px 1fr;gap:7px;margin-top:12px}
+#dimas-store-app .ds-grid-detail{width:42px;height:42px;border:1px solid var(--ds-line);background:#fff;cursor:pointer;font-size:17px}
+#dimas-store-app .ds-grid-buy{min-height:42px;background:var(--ds-ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+#dimas-store-app .ds-load-more{display:flex;justify-content:center;margin-top:22px}
+
+/* Store */
+#dimas-store-app .ds-store-grid{display:grid;grid-template-columns:1fr;gap:14px}
+#dimas-store-app .ds-store-copy{padding:28px;border:1px solid var(--ds-line);background:#fff}
+#dimas-store-app .ds-store-copy h3{margin:0;font-family:var(--ds-display);font-size:clamp(2rem,4.2vw,3.8rem);font-weight:800;line-height:.96;letter-spacing:-.07em}
+#dimas-store-app .ds-store-list{display:grid;gap:15px;margin:30px 0}
+#dimas-store-row{display:block}
+#dimas-store-app .ds-store-row{display:grid;grid-template-columns:88px 1fr;gap:14px;padding-top:13px;border-top:1px solid var(--ds-line)}
+#dimas-store-app .ds-store-row dt{font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ds-muted)}
+#dimas-store-app .ds-store-row dd{margin:0;font-size:13px;line-height:1.65}
+#dimas-store-app .ds-store-actions{display:flex;gap:9px;flex-wrap:wrap}
+#dimas-store-app .ds-order-panel{display:grid;grid-template-columns:1fr;border:1px solid var(--ds-line);background:var(--ds-ink);color:#fff}
+#dimas-store-app .ds-order-step{padding:26px;border-bottom:1px solid var(--ds-line-dark)}
+#dimas-store-app .ds-order-step:last-child{border-bottom:0}
+#dimas-store-app .ds-order-step span{display:block;margin-bottom:13px;font-family:var(--ds-display);font-size:30px;font-weight:800;color:#d6b86b}
+#dimas-store-app .ds-order-step h3{margin:0 0 7px;font-family:var(--ds-display);font-size:16px;letter-spacing:-.03em}
+#dimas-store-app .ds-order-step p{margin:0;color:rgba(255,255,255,.5);font-size:12px;line-height:1.7}
+
+/* Footer */
+#dimas-store-app .ds-footer{padding:68px 0 28px;background:var(--ds-ink);color:#fff}
+#dimas-store-app .ds-footer-grid{display:grid;grid-template-columns:1fr;gap:44px}
+#dimas-store-app .ds-footer-logo{font-family:var(--ds-display);font-size:clamp(2.45rem,8vw,7rem);font-weight:800;line-height:.88;letter-spacing:-.08em;overflow-wrap:normal;word-break:normal}
+#dimas-store-app .ds-footer-logo em{font-style:normal;color:#d6b86b}
+#dimas-store-app .ds-footer p{max-width:470px;margin:20px 0 0;color:rgba(255,255,255,.47);font-size:13px;line-height:1.8}
+#dimas-store-app .ds-footer-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}
+#dimas-store-app .ds-social-links{display:flex;gap:8px;flex-wrap:wrap}
+#dimas-store-app .ds-social-links a{min-height:42px;padding:0 15px;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.63)}
+#dimas-store-app .ds-social-links a:hover{color:#fff;border-color:#fff}
+#dimas-store-app .ds-footer-bottom{margin-top:54px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:rgba(255,255,255,.25);font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+
+/* Modal motion */
+#dimas-store-app .ds-modal{position:fixed;inset:0;z-index:160;display:grid;place-items:end center;padding:0}
+#dimas-store-app .ds-modal[hidden]{display:none}
+#dimas-store-app .ds-modal-backdrop{position:absolute;inset:0;background:rgba(28,25,23,.74);opacity:0;transition:opacity .18s ease}
+#dimas-store-app .ds-modal-card{position:relative;z-index:1;width:100%;max-height:89svh;overflow-y:auto;background:#fff;display:grid;grid-template-columns:1fr;opacity:0;transform:translateY(34px);transition:transform .24s cubic-bezier(.2,.8,.2,1),opacity .2s ease;box-shadow:var(--ds-shadow)}
+#dimas-store-app .ds-modal.is-open .ds-modal-backdrop{opacity:1}
+#dimas-store-app .ds-modal.is-open .ds-modal-card{opacity:1;transform:translateY(0)}
+#dimas-store-app .ds-modal-close{position:absolute;right:14px;top:14px;z-index:3;width:43px;height:43px;border-radius:50%;border:1px solid var(--ds-line);background:#fff;cursor:pointer;font-size:18px}
+#dimas-store-app .ds-modal-image{aspect-ratio:4/3;overflow:hidden;background:#ddd}
+#dimas-store-app .ds-modal-image img{width:100%;height:100%;object-fit:cover}
+#dimas-store-app .ds-modal-body{padding:24px}
+#dimas-store-app .ds-modal-cat{margin:0 0 7px;font-size:9px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ds-gold)}
+#dimas-store-app .ds-modal-title{margin:0;font-family:var(--ds-display);font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;line-height:1.05;letter-spacing:-.055em}
+#dimas-store-app .ds-modal-price{margin:12px 0 0;font-size:18px;font-weight:800}
+#dimas-store-app .ds-modal-desc{margin:13px 0 0;color:var(--ds-muted);font-size:13px;line-height:1.8}
+#dimas-store-app .ds-modal-specs{margin:19px 0;border-top:1px solid var(--ds-line)}
+#dimas-store-app .ds-spec-row{display:grid;grid-template-columns:94px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--ds-line);font-size:12px}
+#dimas-store-app .ds-spec-row span:first-child{color:var(--ds-muted);font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+#dimas-store-app .ds-spec-row span:last-child{font-weight:700}
+#dimas-store-app .ds-modal-actions{display:flex;gap:9px;flex-wrap:wrap}
+
+/* Mobile sticky */
+#dimas-store-app .ds-mobile-sticky{position:fixed;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));z-index:90;padding:8px;background:rgba(250,250,249,.94);border:1px solid var(--ds-line);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(28,25,23,.18);display:grid;grid-template-columns:1fr 1fr;gap:7px;transition:opacity .18s ease,transform .18s ease}
+#dimas-store-app .ds-mobile-sticky a{min-height:44px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff}
+#dimas-store-app .ds-mobile-sticky .is-shop{background:var(--ds-flame)}
+#dimas-store-app .ds-mobile-sticky .is-wa{background:#168a45}
+#dimas-store-app.ds-locked .ds-mobile-sticky{opacity:0;transform:translateY(12px);pointer-events:none}
+#dimas-store-app main>section[id]{scroll-margin-top:82px}
+
+@media(min-width:720px){
+  #dimas-store-app .ds-hero-body{grid-template-columns:minmax(0,1fr) 260px}
+  #dimas-store-app .ds-hero-index{display:grid}
+  #dimas-store-app .ds-catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  #dimas-store-app .ds-modal{place-items:center;padding:20px}
+  #dimas-store-app .ds-modal-card{width:min(950px,94vw);max-height:86svh;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  #dimas-store-app .ds-modal-image{aspect-ratio:auto;min-height:540px}
+  #dimas-store-app .ds-modal-body{padding:34px;min-width:0}
+  #dimas-store-app .ds-mobile-sticky{display:none}
+}
+@media(min-width:960px){
+  #dimas-store-app .ds-nav{display:flex}
+  #dimas-store-app .ds-menu-btn{display:none}
+}
+@media(min-width:900px){
+  #dimas-store-app .ds-identity-grid{grid-template-columns:1.08fr .92fr}
+  #dimas-store-app .ds-wardrobe{grid-template-columns:320px 1fr}
+  #dimas-store-app .ds-wardrobe-list{border-right:1px solid var(--ds-line);border-bottom:0}
+  #dimas-store-app .ds-catalog-toolbar{grid-template-columns:360px 1fr;align-items:start}
+  #dimas-store-app .ds-catalog-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+  #dimas-store-app .ds-store-grid{grid-template-columns:.9fr 1.1fr}
+  #dimas-store-app .ds-order-panel{grid-template-columns:repeat(3,1fr)}
+  #dimas-store-app .ds-order-step{border-bottom:0;border-right:1px solid var(--ds-line-dark)}
+  #dimas-store-app .ds-order-step:last-child{border-right:0}
+  #dimas-store-app .ds-footer-grid{grid-template-columns:1.25fr .75fr;align-items:end}
+}
+@media(max-width:959px){
+  #dimas-store-app .ds-nav{display:none}
+  #dimas-store-app .ds-menu-btn{display:grid}
+}
+@media(max-width:719px){
+  #dimas-store-app{padding-bottom:82px}
+  #dimas-store-app .ds-header-actions .ds-btn{display:none}
+  #dimas-store-app .ds-current-product{display:none}
+  #dimas-store-app .ds-section{padding:68px 0}
+  #dimas-store-app .ds-product-rail{grid-auto-columns:minmax(265px,78vw)}
+  #dimas-store-app .ds-current-product{left:18px;right:18px;max-width:none}
+  #dimas-store-app .ds-photo-stack{grid-template-columns:1fr;grid-template-rows:330px 180px 180px}
+  #dimas-store-app .ds-photo-stack figure:first-child{grid-row:auto}
+}
+@media(max-width:480px){
+  #dimas-store-app{--ds-wrap:min(100% - 26px,100%)}
+  #dimas-store-app .ds-brand-copy strong{max-width:145px}
+  #dimas-store-app .ds-hero h1{font-size:clamp(2.25rem,11.5vw,3.55rem);line-height:.98}
+  #dimas-store-app .ds-catalog-grid{grid-template-columns:1fr 1fr;gap:8px}
+  #dimas-store-app .ds-grid-body{padding:11px}
+  #dimas-store-app .ds-grid-title{font-size:12px}
+  #dimas-store-app .ds-store-row{grid-template-columns:1fr;gap:4px}
+  #dimas-store-app .ds-footer-logo{font-size:clamp(2.3rem,13vw,3.5rem)}
+  #dimas-store-app .ds-hero-actions .ds-btn,
+  #dimas-store-app .ds-wardrobe-actions .ds-btn,
+  #dimas-store-app .ds-modal-actions .ds-btn{width:100%;white-space:normal;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+  #dimas-store-app *,#dimas-store-app *::before,#dimas-store-app *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<script>
+window.DIMAS_STORE_CONFIG = {
+  APPS_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycby0oz0Cy24YgarBuy4SQh-VmjYUwK-aGiWvkTETQdfHNohUBKonEVByC8JHuER3Acwz/exec'
+};
+window.DIMAS_SAMPLE_PRODUCTS = window.DIMAS_SAMPLE_PRODUCTS || [];
+</script>
+
+<div id="dimas-store-app">
+  <div class="ds-loading" id="dsLoading" role="status" aria-live="polite">
+    <span class="ds-spinner" aria-hidden="true"></span>
+    <span id="dsLoadingText">Memuat koleksi terbaru</span>
+  </div>
+
+  <header class="ds-header" id="dsHeader">
+    <div class="ds-wrap ds-header-in">
+      <a class="ds-brand" href="#dsHome" aria-label="Kembali ke atas">
+        <span class="ds-brand-mark" id="dsBrandMark">D/S</span>
+        <span class="ds-brand-copy">
+          <strong id="dsBrandText">DIMAS STORE</strong>
+          <small>Tugumulyo · Sumatra Selatan</small>
+        </span>
+      </a>
+      <nav class="ds-nav" aria-label="Navigasi Dimas Store">
+        <a href="#dsCollection">Koleksi</a>
+        <a href="#dsIdentity">Tentang</a>
+        <a href="#dsWardrobe">Bantu Pilih</a>
+        <a href="#dsCatalog">Katalog</a>
+        <a href="#dsStore">Toko</a>
+      </nav>
+      <div class="ds-header-actions">
+        <a class="ds-btn ds-btn-gold ds-btn-small" data-store-link="shopee_toko" href="#" target="_blank" rel="noopener">Buka Shopee</a>
+        <button class="ds-menu-btn" id="dsMenuOpen" type="button" aria-label="Buka menu" aria-expanded="false">
+          <span class="ds-menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ds-mobile-menu" id="dsMobileMenu" aria-hidden="true" role="dialog" aria-label="Menu navigasi">
+    <div class="ds-mobile-head">
+      <span class="ds-brand"><span class="ds-brand-mark">D/S</span><span class="ds-brand-copy"><strong id="dsMobileBrand">DIMAS STORE</strong><small>Toko pakaian lokal</small></span></span>
+      <button class="ds-mobile-close" id="dsMenuClose" type="button" aria-label="Tutup menu">×</button>
+    </div>
+    <nav class="ds-mobile-nav">
+      <a href="#dsCollection">Koleksi</a>
+      <a href="#dsIdentity">Tentang</a>
+      <a href="#dsWardrobe">Bantu Pilih</a>
+      <a href="#dsCatalog">Katalog</a>
+      <a href="#dsStore">Toko</a>
+    </nav>
+    <div class="ds-mobile-foot">Buka setiap hari · 07:30–16:00 WIB</div>
+  </div>
+
+  <main>
+    <section class="ds-hero" id="dsHome">
+      <div class="ds-hero-media" id="dsHeroMedia" aria-hidden="true"></div>
+      <div class="ds-hero-overlay" aria-hidden="true"></div>
+      <div class="ds-hero-grain" aria-hidden="true"></div>
+      <div class="ds-hero-body">
+        <div>
+          <p class="ds-hero-label"><span id="dsHeroStoreName">Dimas Store</span> · Toko pakaian di Tugumulyo</p>
+          <p class="ds-hero-tagline" id="dsHeroTagline">Outfit Casual &amp; Streetwear Kekinian</p>
+          <h1 id="dsHeroTitle">Pilihan pakaian untuk tampil rapi setiap hari.</h1>
+          <p class="ds-hero-desc" id="dsHeroDesc">Temukan kaos, kemeja, hoodie, batik, baju koko, dan celana untuk kerja, kuliah, ibadah, acara keluarga, serta aktivitas santai. Cek ukuran dan stok langsung ke admin atau checkout aman melalui Shopee.</p>
+          <div class="ds-hero-actions">
+            <a class="ds-btn ds-btn-gold" href="#dsCollection">Lihat koleksi</a>
+            <a class="ds-btn ds-btn-light" data-store-link="whatsapp" href="#" target="_blank" rel="noopener">Tanya ukuran & stok</a>
+          </div>
+          <div class="ds-hero-stats">
+            <div class="ds-hstat"><strong id="dsHeroCount">0+</strong><span>Produk aktif</span></div>
+            <div class="ds-hstat"><strong>Fast</strong><span>Respon admin</span></div>
+            <div class="ds-hstat"><strong>Aman</strong><span>Checkout Shopee</span></div>
+          </div>
+        </div>
+        <div class="ds-hero-index" id="dsHeroIndex" aria-label="Pilihan gambar hero"></div>
+      </div>
+      <div class="ds-current-product" id="dsCurrentProduct">
+        <small>Pilihan koleksi</small>
+        <strong id="dsCurrentProductName">Dimas Store</strong>
+      </div>
+    </section>
+
+    <div class="ds-ticker" aria-hidden="true">
+      <div class="ds-ticker-track" id="dsTickerTrack"></div>
+    </div>
+
+    <section class="ds-section" id="dsCollection">
+      <div class="ds-wrap">
+        <div class="ds-section-head">
+          <p class="ds-eyebrow">Koleksi / 01</p>
+          <h2 class="ds-section-title">Koleksi pakaian yang nyaman dipakai berulang.</h2>
+          <p class="ds-section-desc">Jelajahi kaos oversize, kemeja casual, hoodie, batik modern, baju koko, dan celana pilihan Dimas Store. Buka detail produk untuk melihat ukuran, warna, bahan, dan harga terbaru.</p>
+        </div>
+        <div class="ds-filter-row" id="dsRailFilters" role="group" aria-label="Filter koleksi"></div>
+      </div>
+      <div class="ds-product-rail" id="dsProductRail" aria-live="polite"></div>
+    </section>
+
+    <section class="ds-section ds-section-dark" id="dsIdentity">
+      <div class="ds-wrap">
+        <div class="ds-section-head">
+          <p class="ds-eyebrow">Tentang toko / 02</p>
+          <h2 class="ds-section-title">Toko pakaian lokal dengan pelayanan yang lebih personal.</h2>
+          <p class="ds-section-desc">Dimas Store melayani kebutuhan pakaian masyarakat Tugumulyo dan sekitarnya. Setiap koleksi dipilih untuk menunjang aktivitas kerja, kuliah, ibadah, acara keluarga, hingga gaya santai sehari-hari.</p>
+        </div>
+        <div class="ds-identity-grid">
+          <div class="ds-photo-stack" id="dsPhotoStack" aria-label="Foto koleksi Dimas Store"></div>
+          <div class="ds-pillars">
+            <article class="ds-pillar"><span class="ds-pillar-num">01</span><div><h3>Konsultasi ukuran sebelum membeli</h3><p>Admin siap membantu mengecek ukuran dan ketersediaan warna agar pilihan lebih sesuai sebelum Anda checkout.</p></div></article>
+            <article class="ds-pillar"><span class="ds-pillar-num">02</span><div><h3>Katalog mengikuti pilihan yang tersedia</h3><p>Produk aktif diperbarui dari data toko sehingga koleksi yang ditampilkan tetap relevan untuk pembeli.</p></div></article>
+            <article class="ds-pillar"><span class="ds-pillar-num">03</span><div><h3>Belanja sesuai cara yang paling nyaman</h3><p>Checkout melalui Shopee, konsultasi lewat WhatsApp, atau datang langsung ke toko Dimas Store di Tugumulyo.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-section ds-section-alt" id="dsWardrobe">
+      <div class="ds-wrap">
+        <div class="ds-section-head">
+          <p class="ds-eyebrow">Bantu pilih / 03</p>
+          <h2 class="ds-section-title">Temukan model yang sesuai dengan kebutuhan Anda.</h2>
+          <p class="ds-section-desc">Pilih produk untuk melihat model, bahan, harga, dan detail penting dalam satu tampilan. Hubungi admin jika Anda memerlukan rekomendasi ukuran sebelum membeli.</p>
+        </div>
+        <div class="ds-wardrobe">
+          <aside class="ds-wardrobe-list">
+            <h3>Rekomendasi produk</h3>
+            <p>Pilih salah satu item untuk melihat detail dan opsi pemesanannya.</p>
+            <div class="ds-wardrobe-items" id="dsWardrobeList"></div>
+          </aside>
+          <div class="ds-wardrobe-stage">
+            <img id="dsWardrobeImage" src="" alt="Produk pilihan Dimas Store">
+            <div class="ds-wardrobe-copy">
+              <p class="ds-wardrobe-cat" id="dsWardrobeCategory"></p>
+              <h3 id="dsWardrobeTitle">Pilih produk</h3>
+              <p id="dsWardrobeDescription">Detail produk akan tampil di sini.</p>
+              <div class="ds-wardrobe-actions">
+                <button class="ds-btn ds-btn-gold" id="dsWardrobeDetail" type="button">Lihat detail</button>
+                <a class="ds-btn ds-btn-light" id="dsWardrobeWa" href="#" target="_blank" rel="noopener">Tanya admin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-section" id="dsCatalog">
+      <div class="ds-wrap">
+        <div class="ds-section-head">
+          <p class="ds-eyebrow">Katalog lengkap / 04</p>
+          <h2 class="ds-section-title">Katalog pakaian Dimas Store.</h2>
+          <p class="ds-section-desc">Gunakan pencarian atau filter kategori untuk menemukan kaos, kemeja, hoodie, batik, baju koko, dan celana. Informasi produk diperbarui langsung dari data toko.</p>
+        </div>
+        <div class="ds-catalog-toolbar">
+          <label class="ds-search">
+            <span class="ds-sr-only">Cari produk</span>
+            <input id="dsSearchInput" type="search" placeholder="Cari kaos, kemeja, hoodie, ukuran, atau warna...">
+          </label>
+          <div class="ds-filter-row" id="dsCatalogFilters" role="group" aria-label="Filter katalog"></div>
+        </div>
+        <div class="ds-catalog-grid" id="dsCatalogGrid"></div>
+        <div class="ds-load-more">
+          <button class="ds-btn ds-btn-outline" id="dsLoadMore" type="button">Tampilkan semua produk</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-section ds-section-alt" id="dsStore">
+      <div class="ds-wrap">
+        <div class="ds-section-head">
+          <p class="ds-eyebrow">Toko & pemesanan / 05</p>
+          <h2 class="ds-section-title">Belanja online atau kunjungi Dimas Store Tugumulyo.</h2>
+          <p class="ds-section-desc">Cek stok dan ukuran melalui WhatsApp, checkout aman di Shopee, atau datang langsung untuk melihat produk dan memilih ukuran yang paling sesuai.</p>
+        </div>
+        <div class="ds-store-grid">
+          <div class="ds-store-copy">
+            <h3>Toko pakaian lokal dengan pelayanan langsung.</h3>
+            <dl class="ds-store-list">
+              <div class="ds-store-row"><dt>Alamat</dt><dd>Jl. Lintas Timur Tugumulyo, Blok F Lorong Ulan-Ulin, dekat Plang Toko Rini Hadi Pakaian, Sumatra Selatan.</dd></div>
+              <div class="ds-store-row"><dt>Jam buka</dt><dd>Setiap hari, pukul 07:30–16:00 WIB.</dd></div>
+              <div class="ds-store-row"><dt>Layanan</dt><dd>Konsultasi ukuran melalui WhatsApp, checkout melalui Shopee, atau belanja langsung di toko.</dd></div>
+            </dl>
+            <div class="ds-store-actions">
+              <a class="ds-btn ds-btn-dark" href="https://maps.google.com/?q=Tugumulyo+Sumatra+Selatan" target="_blank" rel="noopener">Buka peta</a>
+              <a class="ds-btn ds-btn-outline" data-store-link="whatsapp" href="#" target="_blank" rel="noopener">Hubungi admin</a>
+            </div>
+          </div>
+          <div class="ds-order-panel">
+            <article class="ds-order-step"><span>01</span><h3>Temukan produk yang sesuai</h3><p>Jelajahi koleksi, gunakan filter kategori, lalu cek ukuran, warna, bahan, dan harga produk.</p></article>
+            <article class="ds-order-step"><span>02</span><h3>Konfirmasi ukuran dan stok</h3><p>Hubungi admin Dimas Store untuk memastikan ukuran dan warna yang Anda inginkan masih tersedia.</p></article>
+            <article class="ds-order-step"><span>03</span><h3>Selesaikan pembelian</h3><p>Checkout dengan aman melalui Shopee atau kunjungi toko Dimas Store sesuai jam operasional.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ds-footer" id="dsContact">
+    <div class="ds-wrap">
+      <div class="ds-footer-grid">
+        <div>
+          <div class="ds-footer-logo" id="dsFooterLogo">DIMAS<em>STORE</em></div>
+          <p id="dsFooterDescription">Belanja pakaian casual dan streetwear di Dimas Store Tugumulyo. Cek stok melalui WhatsApp, checkout melalui Shopee, atau kunjungi toko secara langsung.</p>
+          <div class="ds-footer-actions">
+            <a class="ds-btn ds-btn-flame" data-store-link="shopee_toko" href="#" target="_blank" rel="noopener">Buka Shopee</a>
+            <a class="ds-btn ds-btn-light" data-store-link="whatsapp" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <div class="ds-social-links">
+            <a data-store-link="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+            <a data-store-link="tiktok" href="#" target="_blank" rel="noopener">TikTok</a>
+            <a data-store-link="linktree" href="#" target="_blank" rel="noopener">Linktree</a>
+            <a data-store-link="shopee_toko" href="#" target="_blank" rel="noopener">Shopee</a>
+          </div>
+        </div>
+      </div>
+      <div class="ds-footer-bottom"><span>© 2026 Dimas Store</span><span>Toko pakaian lokal · Tugumulyo</span></div>
+    </div>
+  </footer>
+
+  <div class="ds-mobile-sticky">
+    <a class="is-shop" data-store-link="shopee_toko" href="#" target="_blank" rel="noopener">Shopee</a>
+    <a class="is-wa" data-store-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <div class="ds-modal" id="dsProductModal" hidden>
+    <div class="ds-modal-backdrop" id="dsModalBackdrop"></div>
+    <article class="ds-modal-card" role="dialog" aria-modal="true" aria-labelledby="dsModalTitle" tabindex="-1">
+      <button class="ds-modal-close" id="dsModalClose" type="button" aria-label="Tutup detail produk">×</button>
+      <div class="ds-modal-image"><img id="dsModalImage" src="" alt=""></div>
+      <div class="ds-modal-body">
+        <p class="ds-modal-cat" id="dsModalCategory"></p>
+        <h2 class="ds-modal-title" id="dsModalTitle"></h2>
+        <p class="ds-modal-price" id="dsModalPrice"></p>
+        <p class="ds-modal-desc" id="dsModalDescription"></p>
+        <div class="ds-modal-specs">
+          <div class="ds-spec-row"><span>Ukuran</span><span id="dsModalSize">—</span></div>
+          <div class="ds-spec-row"><span>Warna</span><span id="dsModalColor">—</span></div>
+          <div class="ds-spec-row"><span>Bahan</span><span id="dsModalMaterial">—</span></div>
+        </div>
+        <div class="ds-modal-actions">
+          <a class="ds-btn ds-btn-flame" id="dsModalShopee" href="#" target="_blank" rel="noopener">Beli di Shopee</a>
+          <a class="ds-btn ds-btn-outline" id="dsModalWhatsApp" href="#" target="_blank" rel="noopener">Tanya admin</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  const APP = document.getElementById('dimas-store-app');
+  if(!APP) return;
+
+  const CONFIG = window.DIMAS_STORE_CONFIG || {};
+  const API_URL = String(CONFIG.APPS_SCRIPT_URL || '').trim();
+  const PLACEHOLDER = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7e5e4"/><stop offset="1" stop-color="#cfc9c2"/></linearGradient></defs>
+      <rect width="900" height="1200" fill="url(#g)"/>
+      <text x="50%" y="49%" text-anchor="middle" fill="#625d57" font-family="Arial" font-size="34" font-weight="700">DIMAS STORE</text>
+      <text x="50%" y="54%" text-anchor="middle" fill="#8a837b" font-family="Arial" font-size="20">Foto produk belum tersedia</text>
+    </svg>`);
+
+  const DEFAULTS = {
+    store_name:'Dimas Store',
+    store_tagline:'Outfit Casual & Streetwear Kekinian',
+    store_description:'Pilihan pakaian casual dan streetwear untuk kerja, kuliah, ibadah, acara keluarga, serta aktivitas santai sehari-hari.',
+    shopee_toko:'',instagram:'',tiktok:'',whatsapp:'',whatsapp_number:'',
+    whatsapp_text:'Halo Dimas Store, saya mau tanya produk.',linktree:'',
+    hero_image:'',logo_text:'DIMASSTORE',max_produk_tampil:8
+  };
+
+  const state = {
+    settings:Object.assign({},DEFAULTS),
+    products:Array.isArray(window.DIMAS_SAMPLE_PRODUCTS) ? window.DIMAS_SAMPLE_PRODUCTS : [],
+    category:'Semua',search:'',showAll:false,heroIndex:0,heroTimer:null,wardrobeIndex:0,lastFocus:null
+  };
+
+  const $ = id => document.getElementById(id);
+  const clean = (v,fb='') => (v===undefined||v===null||String(v).trim()===''?fb:v);
+  const rupiah = v => 'Rp ' + Number(v||0).toLocaleString('id-ID');
+  const esc = v => String(v||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+  const normalizeKey = v => String(v||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+
+  function readAny(obj,keys,fb=''){
+    if(!obj) return fb;
+    const lookup={};
+    Object.keys(obj).forEach(k=>{lookup[k]=obj[k];lookup[normalizeKey(k)]=obj[k];});
+    for(const key of keys){
+      const d=lookup[key],n=lookup[normalizeKey(key)];
+      if(d!==undefined&&d!==null&&String(d).trim()!=='') return d;
+      if(n!==undefined&&n!==null&&String(n).trim()!=='') return n;
+    }
+    return fb;
+  }
+
+  function isPlaceholder(v){
+    const s=String(v||'').toLowerCase().trim();
+    return !s||s==='#'||s.includes('isi_')||s.includes('username')||s.includes('link-produk');
+  }
+
+  function cleanUrl(v,fb=''){
+    let s=String(v||'').trim();
+    if(isPlaceholder(s)) return fb;
+    if(/^https?:\/\//i.test(s)) return s;
+    if(/^(shopee\.co\.id|instagram\.com|www\.instagram\.com|tiktok\.com|www\.tiktok\.com|linktr\.ee|wa\.me)\//i.test(s)) return 'https://'+s;
+    return s||fb;
+  }
+
+  function makeWhatsAppLink(number,message){
+    let digits=String(number||'').replace(/\D/g,'');
+    if(!digits) return '';
+    if(digits.startsWith('0')) digits='62'+digits.slice(1);
+    if(digits.startsWith('8')) digits='62'+digits;
+    return 'https://wa.me/'+digits+'?text='+encodeURIComponent(message||DEFAULTS.whatsapp_text);
+  }
+
+  function productWhatsApp(product){
+    const base=state.settings.whatsapp||makeWhatsAppLink(state.settings.whatsapp_number,state.settings.whatsapp_text);
+    const number=String(base||'').match(/wa\.me\/(\d+)/)?.[1]||String(state.settings.whatsapp_number||'').replace(/\D/g,'');
+    if(!number) return base||'#';
+    const normalized=number.startsWith('0')?'62'+number.slice(1):(number.startsWith('8')?'62'+number:number);
+    const msg=`Halo Dimas Store, saya ingin bertanya tentang *${product.nama_produk}*. Apakah ukuran dan warna yang saya cari masih tersedia?`;
+    return 'https://wa.me/'+normalized+'?text='+encodeURIComponent(msg);
+  }
+
+  function normalizeSettings(raw){
+    const waNumber=readAny(raw,['whatsapp_number','WhatsApp_Number','Nomor_WhatsApp','No_WA','WA_Number'],'');
+    const waText=readAny(raw,['whatsapp_text','WhatsApp_Text','Pesan_WhatsApp'],DEFAULTS.whatsapp_text);
+    const waDirect=cleanUrl(readAny(raw,['whatsapp','WhatsApp','WA_Link','Link_WhatsApp'],''));
+    return {
+      store_name:String(readAny(raw,['store_name','Store_Name','Nama_Toko'],DEFAULTS.store_name)),
+      store_tagline:String(readAny(raw,['store_tagline','Store_Tagline','Tagline'],DEFAULTS.store_tagline)),
+      store_description:String(readAny(raw,['store_description','Store_Description','Deskripsi_Toko'],DEFAULTS.store_description)),
+      shopee_toko:cleanUrl(readAny(raw,['shopee_toko','Shopee_Toko','Shopee','Link_Shopee'],'')),
+      instagram:cleanUrl(readAny(raw,['instagram','Instagram','IG','Link_Instagram'],'')),
+      tiktok:cleanUrl(readAny(raw,['tiktok','TikTok','Tiktok','Link_TikTok'],'')),
+      whatsapp_number:String(waNumber||''),
+      whatsapp_text:String(waText||DEFAULTS.whatsapp_text),
+      whatsapp:makeWhatsAppLink(waNumber,waText)||waDirect||'',
+      linktree:cleanUrl(readAny(raw,['linktree','Linktree','Link_Tree'],'')),
+      hero_image:cleanUrl(readAny(raw,['hero_image','Hero_Image','Gambar_Hero'],'')),
+      logo_text:String(readAny(raw,['logo_text','Logo_Text','Logo'],DEFAULTS.logo_text)),
+      max_produk_tampil:Number(readAny(raw,['max_produk_tampil','Max_Produk_Tampil','Max Produk Tampil'],DEFAULTS.max_produk_tampil)||DEFAULTS.max_produk_tampil)
+    };
+  }
+
+  function normalizeProduct(raw,index){
+    const p=raw||{};
+    const id=String(readAny(p,['id','ID'],'produk_'+index));
+    return {
+      id,
+      _key:id||('produk_'+index),
+      nama_produk:String(readAny(p,['nama_produk','Nama_Produk','Nama Produk','name'],'Produk Dimas Store')),
+      kategori:String(readAny(p,['kategori','Kategori'],'Produk')),
+      harga:Number(readAny(p,['harga','Harga'],0)||0),
+      deskripsi:String(readAny(p,['deskripsi','Deskripsi'],'Detail produk dapat ditanyakan langsung kepada admin.')),
+      ukuran:String(readAny(p,['ukuran','Ukuran','Size'],'-')),
+      warna:String(readAny(p,['warna','Warna','Color'],'-')),
+      bahan:String(readAny(p,['bahan','Bahan','Material'],'-')),
+      foto_1:cleanUrl(readAny(p,['foto_1','Foto_1','Foto 1','image'],'')),
+      foto_2:cleanUrl(readAny(p,['foto_2','Foto_2','Foto 2'],'')),
+      foto_3:cleanUrl(readAny(p,['foto_3','Foto_3','Foto 3'],'')),
+      foto_4:cleanUrl(readAny(p,['foto_4','Foto_4','Foto 4'],'')),
+      link_shopee:cleanUrl(readAny(p,['link_shopee','Link_Shopee','Link Shopee','Shopee'],''),state.settings.shopee_toko),
+      status:String(readAny(p,['status','Status'],'Aktif')),
+      urutan:Number(readAny(p,['urutan','Urutan'],9999)||9999)
+    };
+  }
+
+  function productImage(p){return p?.foto_1||p?.foto_2||p?.foto_3||p?.foto_4||PLACEHOLDER}
+  function productDescription(p){
+    const name=String(p?.nama_produk||'Produk Dimas Store').trim();
+    const category=String(p?.kategori||'pakaian').toLowerCase();
+    const material=p?.bahan&&p.bahan!=='-'?` Menggunakan bahan ${p.bahan} untuk menunjang kenyamanan saat dipakai.`:'';
+    const sizes=p?.ukuran&&p.ukuran!=='-'?` Tersedia dalam ukuran ${p.ukuran}.`:'';
+    const colors=p?.warna&&p.warna!=='-'?` Pilihan warna: ${p.warna}.`:'';
+    const raw=String(p?.deskripsi||'').trim();
+    const opening=raw.length>=45?raw:`${name} merupakan pilihan ${category} dari Dimas Store untuk melengkapi kebutuhan sehari-hari.`;
+    return `${opening}${material}${sizes}${colors} Hubungi admin untuk memastikan stok terbaru sebelum checkout melalui Shopee.`.replace(/\s+/g,' ').trim();
+  }
+
+  function categories(){return ['Semua',...Array.from(new Set(state.products.map(p=>p.kategori).filter(Boolean)))]}
+  function filteredProducts(){
+    const q=state.search.trim().toLowerCase();
+    return state.products.filter(p=>{
+      const cat=state.category==='Semua'||p.kategori===state.category;
+      const hay=[p.nama_produk,p.kategori,p.ukuran,p.warna,p.bahan,p.deskripsi].join(' ').toLowerCase();
+      return cat&&(!q||hay.includes(q));
+    });
+  }
+
+  function setStoreLinks(){
+    APP.querySelectorAll('[data-store-link]').forEach(el=>{
+      const key=el.getAttribute('data-store-link');
+      const href=key==='whatsapp' ? (state.settings.whatsapp||makeWhatsAppLink(state.settings.whatsapp_number,state.settings.whatsapp_text)) : state.settings[key];
+      if(href){el.href=href;el.target='_blank';el.rel='noopener noreferrer';el.style.opacity='';el.style.pointerEvents='';}
+      else{el.href='javascript:void(0)';el.removeAttribute('target');el.style.opacity='.45';el.style.pointerEvents='none';}
+    });
+  }
+
+  function updateSeoMetadata(){
+    const s=state.settings;
+    const title=`${s.store_name} | Toko Pakaian Casual & Streetwear di Tugumulyo`;
+    const description=`Belanja kaos, kemeja, hoodie, batik, baju koko, dan celana di ${s.store_name} Tugumulyo. Cek stok melalui WhatsApp atau checkout aman lewat Shopee.`;
+    const image=s.hero_image||productImage(state.products[0]||{});
+    const canonical=window.location.href.split('#')[0].split('?')[0];
+    document.title=title;
+    const setMeta=(id,value)=>{const el=$(id);if(el)el.setAttribute('content',value||'')};
+    setMeta('dsMetaDescription',description);
+    setMeta('dsOgTitle',title);
+    setMeta('dsOgDescription',description);
+    setMeta('dsOgImage',image);
+    setMeta('dsTwitterTitle',title);
+    setMeta('dsTwitterDescription',description);
+    const canonicalEl=$('dsCanonical');if(canonicalEl)canonicalEl.setAttribute('href',canonical);
+
+    const sameAs=[s.instagram,s.tiktok,s.linktree,s.shopee_toko].filter(Boolean);
+    const productItems=state.products.slice(0,24).map((p,index)=>({
+      '@type':'ListItem',position:index+1,item:{
+        '@type':'Product',name:p.nama_produk,image:productImage(p),description:productDescription(p),
+        category:p.kategori,brand:{'@type':'Brand',name:s.store_name},
+        offers:{'@type':'Offer',priceCurrency:'IDR',price:Number(p.harga||0),availability:'https://schema.org/InStock',url:p.link_shopee||s.shopee_toko||canonical}
+      }
+    }));
+    const schema=[{
+      '@context':'https://schema.org','@type':'ClothingStore',name:s.store_name,url:canonical,
+      description,image,telephone:s.whatsapp_number?`+${String(s.whatsapp_number).replace(/\D/g,'')}`:undefined,
+      address:{'@type':'PostalAddress',streetAddress:'Jl. Lintas Timur Tugumulyo, Blok F Lorong Ulan-Ulin',addressLocality:'Tugumulyo',addressRegion:'Sumatra Selatan',addressCountry:'ID'},
+      openingHours:'Mo-Su 07:30-16:00',sameAs
+    },{'@context':'https://schema.org','@type':'ItemList',name:`Katalog pakaian ${s.store_name}`,itemListElement:productItems}];
+    const structured=$('dsStructuredData');if(structured)structured.textContent=JSON.stringify(schema);
+  }
+
+  function renderSettings(){
+    const s=state.settings;
+    $('dsBrandText').textContent=s.logo_text||s.store_name;
+    $('dsMobileBrand').textContent=s.logo_text||s.store_name;
+    $('dsHeroStoreName').textContent=s.store_name;
+    $('dsHeroTagline').textContent=s.store_tagline||DEFAULTS.store_tagline;
+    $('dsHeroTitle').textContent='Pilihan pakaian untuk tampil rapi setiap hari.';
+    $('dsHeroDesc').textContent=`Temukan kaos, kemeja, hoodie, batik, baju koko, dan celana di ${s.store_name}. Koleksi tersedia untuk kerja, kuliah, ibadah, acara keluarga, dan aktivitas santai. Cek ukuran serta stok langsung ke admin atau checkout aman melalui Shopee.`;
+    $('dsHeroCount').textContent=state.products.length+'+';
+    $('dsFooterDescription').textContent=`Belanja pakaian casual dan streetwear di ${s.store_name}, Tugumulyo. Cek stok melalui WhatsApp, checkout melalui Shopee, atau kunjungi toko secara langsung.`;
+    const logoRaw=String(s.logo_text||s.store_name||'DIMAS STORE').replace(/[_-]+/g,' ').trim();
+    let logoMain='DIMAS', logoAccent='STORE';
+    if(/\s/.test(logoRaw)){
+      const logoWords=logoRaw.split(/\s+/).filter(Boolean);
+      logoMain=logoWords.shift()||'DIMAS';
+      logoAccent=logoWords.join('')||'STORE';
+    }else if(/STORE$/i.test(logoRaw) && logoRaw.length>5){
+      logoMain=logoRaw.slice(0,-5)||'DIMAS';
+      logoAccent='STORE';
+    }else{
+      logoMain=logoRaw||'DIMAS';
+      logoAccent='';
+    }
+    $('dsFooterLogo').innerHTML=esc(logoMain)+(logoAccent?'<em>'+esc(logoAccent)+'</em>':'');
+    const mark=(s.logo_text||s.store_name||'DS').replace(/[^A-Za-z0-9]/g,'').slice(0,2).toUpperCase();
+    $('dsBrandMark').textContent=mark||'DS';
+    setStoreLinks();
+    updateSeoMetadata();
+  }
+
+  function heroSlides(){
+    const slides=[];
+    if(state.settings.hero_image) slides.push({image:state.settings.hero_image,title:state.settings.store_name+' · Koleksi pilihan'});
+    state.products.forEach(p=>{if(slides.length<3&&productImage(p)!==PLACEHOLDER&&!slides.some(x=>x.image===productImage(p))) slides.push({image:productImage(p),title:p.nama_produk});});
+    if(!slides.length) slides.push({image:PLACEHOLDER,title:state.settings.store_name});
+    return slides.slice(0,3);
+  }
+
+  function buildHero(){
+    const slides=heroSlides();
+    if(state.heroIndex>=slides.length) state.heroIndex=0;
+    $('dsHeroMedia').innerHTML=slides.map((s,i)=>`<img src="${esc(s.image)}" alt="" class="${i===state.heroIndex?'is-active':''}" data-hero-image="${i}">`).join('');
+    $('dsHeroIndex').innerHTML='<p class="ds-hero-index-label">Pilihan tampilan</p>'+slides.map((s,i)=>`<button class="ds-hero-index-btn ${i===state.heroIndex?'is-active':''}" type="button" data-hero-button="${i}"><span>0${i+1}</span><strong>${esc(s.title)}</strong></button>`).join('');
+    $('dsCurrentProductName').textContent=slides[state.heroIndex]?.title||state.settings.store_name;
+    $('dsCurrentProduct').style.display=(slides.length>1&&window.matchMedia('(min-width:720px)').matches)?'block':'none';
+    $('dsHeroIndex').querySelectorAll('[data-hero-button]').forEach(btn=>btn.addEventListener('click',()=>setHero(Number(btn.dataset.heroButton),true)));
+    clearInterval(state.heroTimer);
+    if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches&&slides.length>1){state.heroTimer=setInterval(()=>setHero(state.heroIndex+1),5600)}
+  }
+
+  function setHero(i,manual){
+    const slides=heroSlides();
+    state.heroIndex=((i%slides.length)+slides.length)%slides.length;
+    APP.querySelectorAll('[data-hero-image]').forEach((el,idx)=>el.classList.toggle('is-active',idx===state.heroIndex));
+    APP.querySelectorAll('[data-hero-button]').forEach((el,idx)=>el.classList.toggle('is-active',idx===state.heroIndex));
+    $('dsCurrentProductName').textContent=slides[state.heroIndex]?.title||state.settings.store_name;
+    if(manual){clearInterval(state.heroTimer);if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches&&slides.length>1) state.heroTimer=setInterval(()=>setHero(state.heroIndex+1),5600)}
+  }
+
+  function buildTicker(){
+    const cats=categories().filter(x=>x!=='Semua');
+    const items=(cats.length?cats:['Kaos','Kemeja','Hoodie','Batik','Celana']).map(x=>`<span>${esc(x)}</span>`).join('');
+    $('dsTickerTrack').innerHTML=`<div class="ds-ticker-group">${items}</div><div class="ds-ticker-group" aria-hidden="true">${items}</div>`;
+  }
+
+  function buildFilters(){
+    const html=categories().map(c=>`<button class="ds-filter-btn ${c===state.category?'is-active':''}" type="button" data-filter="${esc(c)}">${esc(c)}</button>`).join('');
+    ['dsRailFilters','dsCatalogFilters'].forEach(id=>{
+      const box=$(id);box.innerHTML=html;
+      box.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{state.category=btn.dataset.filter;state.showAll=false;buildFilters();buildRail();buildCatalog();}));
+    });
+  }
+
+  function buildRail(){
+    const items=state.category==='Semua'?state.products:state.products.filter(p=>p.kategori===state.category);
+    const rail=$('dsProductRail');
+    if(!items.length){rail.innerHTML='<div class="ds-empty"><strong>Belum ada produk pada kategori ini.</strong><br>Pastikan produk berstatus Aktif dan memiliki kategori di Google Sheets.</div>';return;}
+    rail.innerHTML=items.map(p=>`<article class="ds-product-card" tabindex="0" data-product="${esc(p._key)}" aria-label="Buka detail ${esc(p.nama_produk)}"><div class="ds-product-media"><img src="${esc(productImage(p))}" alt="${esc(p.nama_produk)}" loading="lazy"><div class="ds-product-copy"><p class="ds-product-cat">${esc(p.kategori)}</p><h3 class="ds-product-name">${esc(p.nama_produk)}</h3><p class="ds-product-price">${rupiah(p.harga)}</p></div></div><button class="ds-product-open" type="button" aria-label="Detail ${esc(p.nama_produk)}">+</button></article>`).join('');
+    rail.querySelectorAll('[data-product]').forEach(card=>{const open=()=>openModal(card.dataset.product);card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});});
+  }
+
+  function buildPhotoStack(){
+    const images=[];
+    if(state.settings.hero_image) images.push({src:state.settings.hero_image,alt:state.settings.store_name});
+    state.products.forEach(p=>{if(images.length<3&&productImage(p)!==PLACEHOLDER&&!images.some(x=>x.src===productImage(p))) images.push({src:productImage(p),alt:p.nama_produk});});
+    while(images.length<3) images.push({src:PLACEHOLDER,alt:'Dimas Store'});
+    $('dsPhotoStack').innerHTML=images.slice(0,3).map(x=>`<figure><img src="${esc(x.src)}" alt="${esc(x.alt)}" loading="lazy"></figure>`).join('');
+  }
+
+  function buildWardrobe(){
+    const items=state.products.slice(0,5);
+    if(!items.length){$('dsWardrobeList').innerHTML='<div class="ds-empty">Produk belum tersedia.</div>';$('dsWardrobeImage').src=state.settings.hero_image||PLACEHOLDER;$('dsWardrobeTitle').textContent='Produk belum tersedia';$('dsWardrobeDescription').textContent='Data akan muncul setelah Google Sheets berhasil dibaca.';return;}
+    if(state.wardrobeIndex>=items.length) state.wardrobeIndex=0;
+    $('dsWardrobeList').innerHTML=items.map((p,i)=>`<button class="ds-wardrobe-item ${i===state.wardrobeIndex?'is-active':''}" type="button" data-wardrobe="${i}"><img class="ds-wardrobe-thumb" src="${esc(productImage(p))}" alt=""><span><small>${esc(p.kategori)}</small><strong>${esc(p.nama_produk)}</strong></span></button>`).join('');
+    $('dsWardrobeList').querySelectorAll('[data-wardrobe]').forEach(btn=>btn.addEventListener('click',()=>{state.wardrobeIndex=Number(btn.dataset.wardrobe);buildWardrobe();}));
+    const p=items[state.wardrobeIndex];
+    $('dsWardrobeImage').src=productImage(p);$('dsWardrobeImage').alt=p.nama_produk;$('dsWardrobeCategory').textContent=p.kategori+' · '+rupiah(p.harga);$('dsWardrobeTitle').textContent=p.nama_produk;$('dsWardrobeDescription').textContent=productDescription(p);$('dsWardrobeDetail').onclick=()=>openModal(p._key);$('dsWardrobeWa').href=productWhatsApp(p);
+  }
+
+  function buildCatalog(){
+    const data=filteredProducts();
+    const limit=Math.max(1,Number(state.settings.max_produk_tampil||8));
+    const shown=state.showAll?data:data.slice(0,limit);
+    const grid=$('dsCatalogGrid');
+    if(!shown.length){grid.innerHTML='<div class="ds-empty" style="grid-column:1/-1"><strong>Produk tidak ditemukan.</strong><br>Coba kata kunci atau kategori lain.</div>';}
+    else{
+      grid.innerHTML=shown.map(p=>`<article class="ds-grid-card"><div class="ds-grid-media" data-product="${esc(p._key)}"><img src="${esc(productImage(p))}" alt="${esc(p.nama_produk)}" loading="lazy"></div><div class="ds-grid-body"><p class="ds-grid-cat">${esc(p.kategori)}</p><h3 class="ds-grid-title">${esc(p.nama_produk)}</h3><div class="ds-grid-meta"><span>Ukuran: ${esc(p.ukuran||'-')}</span><span>Warna: ${esc(p.warna||'-')}</span></div><div class="ds-grid-price">${rupiah(p.harga)}</div><div class="ds-grid-actions"><button class="ds-grid-detail" type="button" data-product="${esc(p._key)}" aria-label="Detail produk">+</button><a class="ds-grid-buy" href="${esc(p.link_shopee||state.settings.shopee_toko||'#')}" target="_blank" rel="noopener">Beli di Shopee</a></div></div></article>`).join('');
+      grid.querySelectorAll('[data-product]').forEach(el=>el.addEventListener('click',e=>{if(e.currentTarget.tagName==='A')return;openModal(el.dataset.product);}));
+    }
+    $('dsLoadMore').style.display=data.length>limit?'inline-flex':'none';
+    $('dsLoadMore').textContent=state.showAll?'Tampilkan lebih sedikit':'Tampilkan semua produk';
+  }
+
+  function renderAll(){renderSettings();buildHero();buildTicker();buildFilters();buildRail();buildPhotoStack();buildWardrobe();buildCatalog();}
+
+  function openModal(key){
+    const p=state.products.find(x=>String(x._key)===String(key));if(!p)return;
+    state.lastFocus=document.activeElement;
+    $('dsModalImage').src=productImage(p);$('dsModalImage').alt=p.nama_produk;$('dsModalCategory').textContent=p.kategori;$('dsModalTitle').textContent=p.nama_produk;$('dsModalPrice').textContent=rupiah(p.harga);$('dsModalDescription').textContent=productDescription(p);$('dsModalSize').textContent=p.ukuran||'-';$('dsModalColor').textContent=p.warna||'-';$('dsModalMaterial').textContent=p.bahan||'-';$('dsModalShopee').href=p.link_shopee||state.settings.shopee_toko||'#';$('dsModalWhatsApp').href=productWhatsApp(p);
+    const modal=$('dsProductModal');modal.hidden=false;APP.classList.add('ds-locked');document.body.classList.add('ds-page-locked');requestAnimationFrame(()=>{modal.classList.add('is-open');modal.querySelector('.ds-modal-card').focus();});
+  }
+
+  function closeModal(){
+    const modal=$('dsProductModal');if(modal.hidden)return;
+    modal.classList.remove('is-open');APP.classList.remove('ds-locked');document.body.classList.remove('ds-page-locked');
+    const card=modal.querySelector('.ds-modal-card');
+    const done=()=>{modal.hidden=true;card.removeEventListener('transitionend',done);state.lastFocus?.focus?.();};
+    if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) done(); else {card.addEventListener('transitionend',done,{once:true});setTimeout(()=>{if(!modal.hidden)done();},320);}
+  }
+
+  function setMenu(open){
+    $('dsMobileMenu').classList.toggle('is-open',open);$('dsMobileMenu').setAttribute('aria-hidden',String(!open));$('dsMenuOpen').setAttribute('aria-expanded',String(open));APP.classList.toggle('ds-locked',open);document.body.classList.toggle('ds-page-locked',open);
+  }
+
+  function jsonp(url){
+    return new Promise((resolve,reject)=>{
+      const name='dimasStoreCallback_'+Date.now()+'_'+Math.floor(Math.random()*999999);
+      const script=document.createElement('script');
+      const sep=url.includes('?')?'&':'?';
+      const finalUrl=url+sep+'callback='+encodeURIComponent(name)+'&cache='+Date.now();
+      window.__DIMAS_DEBUG_JSONP_URL__=finalUrl;
+      const cleanup=()=>{try{delete window[name]}catch(e){window[name]=undefined}script.parentNode?.removeChild(script)};
+      const timeout=setTimeout(()=>{cleanup();reject(new Error('Callback JSONP tidak terpanggil.'))},30000);
+      window[name]=data=>{clearTimeout(timeout);window.__DIMAS_LAST_PAYLOAD__=data;cleanup();resolve(data)};
+      script.onerror=()=>{clearTimeout(timeout);cleanup();reject(new Error('Apps Script tidak dapat dimuat.'))};
+      script.async=true;script.src=finalUrl;(document.body||document.documentElement).appendChild(script);
+    });
+  }
+
+  async function loadData(){
+    if(!API_URL||API_URL.includes('ISI_LINK_WEB_APP')) throw new Error('URL Apps Script belum diisi.');
+    const sep=API_URL.includes('?')?'&':'?';
+    return jsonp(API_URL.replace(/\/+$/,'')+sep+'action=store');
+  }
+
+  function resolvePayload(data){
+    if(!data||data.ok===false) throw new Error(data?.message||'API mengembalikan status gagal.');
+    const settingsRaw=data.settings||data.data?.settings||(data.Store_Name||data.Shopee_Toko||data.WhatsApp_Number?data:{});
+    const productsRaw=Array.isArray(data.products)?data.products:(Array.isArray(data.data?.products)?data.data.products:(Array.isArray(data)?data:[]));
+    state.settings=Object.assign({},DEFAULTS,normalizeSettings(settingsRaw));
+    state.products=productsRaw.map(normalizeProduct).filter(p=>String(p.status||'Aktif').toLowerCase()==='aktif').sort((a,b)=>a.urutan-b.urutan);
+    window.DIMAS_STORE_STATE=state;
+  }
+
+  function bindEvents(){
+    $('dsSearchInput').addEventListener('input',e=>{state.search=e.target.value;state.showAll=false;buildCatalog();});
+    $('dsLoadMore').addEventListener('click',()=>{state.showAll=!state.showAll;buildCatalog();});
+    $('dsModalClose').addEventListener('click',closeModal);$('dsModalBackdrop').addEventListener('click',closeModal);
+    $('dsMenuOpen').addEventListener('click',()=>setMenu(true));$('dsMenuClose').addEventListener('click',()=>setMenu(false));
+    $('dsMobileMenu').querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();setMenu(false)}});
+    const onScroll=()=>{$('dsHeader').classList.toggle('is-solid',window.scrollY>36)};onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  }
+
+  async function init(){
+    bindEvents();
+    state.settings=Object.assign({},DEFAULTS);
+    state.products=(Array.isArray(window.DIMAS_SAMPLE_PRODUCTS)?window.DIMAS_SAMPLE_PRODUCTS:[]).map(normalizeProduct);
+    renderAll();
+    setTimeout(()=>$('dsLoading')?.classList.add('is-hidden'),700);
+    try{
+      const payload=await loadData();
+      resolvePayload(payload);
+      renderAll();
+      $('dsLoadingText').textContent='Koleksi berhasil diperbarui';
+    }catch(err){
+      console.error('Dimas Store API error:',err);
+      $('dsLoadingText').textContent='Koleksi online belum tersedia';
+      if(!state.products.length){
+        $('dsProductRail').innerHTML='<div class="ds-empty"><strong>Data produk belum terbaca.</strong><br>Periksa deployment Apps Script dan pastikan URL <code>?action=store&amp;callback=test</code> menghasilkan <code>test({...});</code>.</div>';
+        $('dsCatalogGrid').innerHTML='<div class="ds-empty" style="grid-column:1/-1"><strong>Katalog menunggu data Google Sheets.</strong><br>URL debug tersedia di Console melalui <code>window.__DIMAS_DEBUG_JSONP_URL__</code>.</div>';
+      }
+    }finally{
+      setTimeout(()=>$('dsLoading')?.remove(),1500);
+    }
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true}); else init();
+})();
+</script>
+</body>
+</html>

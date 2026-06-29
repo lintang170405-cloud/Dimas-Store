@@ -1,5 +1,15 @@
-# Dimas Store — GitHub Pages UI Max Fixed
+# Dimas Store — Toko Pakaian
 
-Versi audit responsif untuk GitHub Pages. Koneksi Google Sheets / Apps Script JSONP tetap aktif.
+Versi GitHub Pages dengan positioning umum sebagai **toko pakaian**, bukan hanya pakaian pria.
 
-Perbaikan: breakpoint header, sticky mobile, hero overlay, modal, footer logo, anchor offset, dan safe-area mobile.
+## Perubahan
+
+- SEO title dan meta description menjadi toko pakaian
+- Hero, section, footer, dan microcopy tidak lagi menyebut pakaian pria
+- Structured data tetap menggunakan `ClothingStore`
+- Data produk dan foto tetap terhubung ke Google Sheets melalui Apps Script JSONP
+- Harga coret tidak ditampilkan
+
+## Deploy
+
+Upload `index.html`, `404.html`, `.nojekyll`, dan `README.md` langsung ke root repository GitHub Pages.
